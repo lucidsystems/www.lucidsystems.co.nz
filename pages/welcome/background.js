@@ -30,7 +30,7 @@ $(function() {
 			}, Math.random() * 1000);
 		});
 */
-		var eX = chorus.canvas.width * Math.min(0.2 + Math.random(), 0.8), eY = chorus.canvas.height * 0.6;
+		var eX = chorus.canvas.width * Math.min(0.2 + Math.random(), 0.8), eY = chorus.canvas.height * 0.5;
 		eY -= eY * 0.2 * Math.random();
 		
 		chorus.getBrush('Web', function(brush) {
@@ -42,10 +42,10 @@ $(function() {
 			});
 		})
 		
-		chorus.getBrush('Web', function(brush) {
-			var x = chorus.canvas.width * Math.random(), y = eY - 200 + (Math.random() * 100);
+		chorus.getBrush('Sketchy', function(brush) {
+			var x = (chorus.canvas.width / 2) + (100 * Math.random()), y = eY - 300;
 			
-			var sx = Math.max(0.8, Math.random()), sy = sx;
+			var sx = Math.max(2.5, Math.random() * 3.0), sy = sx;
 			if (Math.random() < 0.5) sx = sx * -1;
 			
 			chorus.draw(brush, Tree, {

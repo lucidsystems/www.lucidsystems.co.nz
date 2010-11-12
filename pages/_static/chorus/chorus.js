@@ -156,12 +156,10 @@ Chorus.prototype.draw = function(brush, strokes, options) {
 	var last = function(){};
 	
 	for (var i = 0; i < strokes.length; i++) {
-		var color = strokes[i][0], coords;
-		if (color[0] < 1) {
-			color[0] = Math.floor(color[0] * 255);
-			color[1] = Math.floor(color[1] * 255);
-			color[2] = Math.floor(color[2] * 255);
-		}
+		var color = [0, 0, 0], coords;
+		color[0] = Math.floor(strokes[i][0][2] * 255);
+		color[1] = Math.floor(strokes[i][0][1] * 255);
+		color[2] = Math.floor(strokes[i][0][0] * 255);
 		
 		if (options.transform) {
 			coords = [];
