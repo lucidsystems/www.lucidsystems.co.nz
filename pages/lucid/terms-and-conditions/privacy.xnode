@@ -1,0 +1,17 @@
+<page>
+	<heading>Privacy Policy</heading>
+	
+	<p>Any information we collect from you will not be distributed to any third parties, unless : (1) You provide false payment information. (2) Your account with us is outstanding. (3) You submit information to a publicly accessible server, for example if you submit a post to public web forum. (4) Such information is required in order for a third party to complete a job for you.</p>
+
+	<p>As you view this site, information about your computer and network connection may be sent to the <a href="http://www.google.com/analytics/">Google Analytics</a> servers by your web-browser. We use the Google Analytics service in order to gain a better understanding of how to improve our services for you.</p>
+
+	<p>Currently any information you supply to us via the Internet will be not be encrypted. Therefore we can not be held responsible for any information which is stolen during transit or from our server(s) by a cracker. Security is important to Lucid Information Systems Limited, therefore we perform regular security checks to minimise these risks.</p>
+
+	<p>We will not send you advertising or any other unsolicited email if you have requested and verified that you do not wish to receive such material.</p>
+
+	<p>If you would like to use encryption to provide an additional layer of privacy to your communications with Lucid Information Systems, please <a href="/welcome/contact-us">contact us</a> first via an unsecured communication method; we will then assist you with the setup of encrypted communications.</p>
+
+	<p>If you are familiar with PGP, or the open source implementation GNU PGP then you may download Lucid's <a href="Lucid-PublicKey.asc">public key</a>. This key is an OpenPGP ASCII armoured file which will allow verification of the authenticity of documents which have been digitally signed by Lucid. In addition, communications you send to Lucid may be encrypted using our public key.</p>
+
+	<p>Lucid has a periodic mailing list, however in order to receive updates, you must subscribe.</p>
+</page>

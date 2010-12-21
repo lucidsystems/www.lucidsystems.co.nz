@@ -113,13 +113,15 @@ Chorus.smooth = function(coords, subdivisions) {
 	if (coords.length >= 3) {
 		var smoothed = [];
 		
-		for (var i = 0; i < coords.length; i++) {
+		for (var i = 0; i < coords.length - 1; i++) {
 			for (var j = 0; j < subdivisions; j++) {
 				var t = j / subdivisions;
 				
 				smoothed.push(Chorus.interpolate(coords, i + t));
 			}
 		}
+		
+		smoothed.push(coords[coords.length - 1]);
 		
 		return smoothed;
 	}
@@ -146,10 +148,10 @@ Chorus.prototype.stroke = function(brush, coords, interpolate, callback) {
 	
 	var i;
 	for (i = 0; i < coords.length; i++) {
-		setTimeout(S.bind(this, coords[i]), i * 10);
+		setTimeout(S.bind(this, coords[i]), i * 20);
 	}
 	
-	setTimeout(Sf.bind(this, coords[i-1]), i * 10);
+	setTimeout(Sf.bind(this, coords[i-1]), i * 20);
 }
 
 Chorus.prototype.draw = function(brush, strokes, options) {

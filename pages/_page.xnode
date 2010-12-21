@@ -1,3 +1,4 @@
+<?r response.cache! ?>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -10,56 +11,36 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=8" />
 		
 		<link rel="icon" type="image/png" href="/_static/icon.png" />
+		<link rel="stylesheet" href="/_static/site.css" type="text/css" media="screen" charset="utf-8" />
 
-		<link rel="stylesheet" href="http://files.oriontransfer.org/oriontransfer/basic.css?1" type="text/css" media="screen" charset="utf-8" />
-		<link rel="stylesheet" href="/_css/jquery.lightbox.css" type="text/css" media="screen" charset="utf-8" />
-		<link rel="stylesheet" href="/_css/site.css" type="text/css" media="screen" charset="utf-8" />
-
-		<script src="/_js/jquery.js" type="text/javascript" charset="utf-8"></script>
-		<script src="/_js/jquery.lightbox-0.5.js" type="text/javascript" charset="utf-8"></script>
-
-		<script type="text/javascript" charset="utf-8">
-		$(function() {
-			$('a.thumbnail').lightBox({fixedNavigation:true});
-		});
-		</script>
+		<script src="/_static/jquery-1.4.2.min.js" type="text/javascript" charset="utf-8"></script>
 	</head>
 
-	<?r response["Content-Type"] = "text/html; charset=utf-8" ?>
-	<?r response["Cache-Control"] = "max-age=3600" ?>
-
 	<body>
-		<div id="header" />
-
-		<div id="menu">
-			<h1>Navigation</h1>
-			<ul class="top">
-				<?r links("/", :indices => true).each do |s| ?>
-				<li>#{s.to_href}
-					<ul>
-						<?r if s.path && s.kind == :directory ?>
-						<?r links(s.path.dirname).each do |c| ?>
-						<?r if c.href? ?>
-						<li>#{c.to_href}</li>
-						<?r end ?>
-						<?r end ?>
-						<?r end ?>
-					</ul>
-				</li>
+		<div class="header">
+			<a style="display: block;" href="/" class="logo"></a>
+			
+			<div class="menu">
+				<?r links("/").each do |link|
+					next unless link[:header] == true
+				?>
+					#{link.to_href}
 				<?r end ?>
-			</ul>
+				
+				<search />
+			</div>
 		</div>
-
-		<div id="content">
+		
+		<navigation />
+		
+		<div class="content">
 			<content />
 		</div>
-
-		<div id="footer">
-			It took {{benchmark}}s to render this page.
-
-			&copy; 2009 Lucid Information Systems. All Rights Reserved.
-		</div>
-
-		<google_analytics id="UA-2484649-1" />
+		
+		<footer />
+		
+		<env only="production">
+			<google_analytics id="UA-2484649-1" />
+		</env>
 	</body>
 </html>

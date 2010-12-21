@@ -1,0 +1,7 @@
+<div id="footer">
+		<!--  It took {{benchmark}}s to render. -->
+		&copy; 2010 <a href="http://www.lucidsystems.org/">Lucid Information Systems Ltd</a>.
+		| <a href="/lucid/contact-us">Contact Us</a>
+		| <a href="/lucid/terms-and-conditions">Disclaimer</a>
+		| Website designed by <a href="http://www.oriontransfer.co.nz/">Orion Transfer Ltd</a>
+</div>

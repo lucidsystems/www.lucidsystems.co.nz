@@ -1,0 +1,13 @@
+<page>
+	<heading>Contact Us</heading>
+	
+	<p>
+		<strong>Your message has not been sent!</strong>
+	</p>
+	
+	<p>There was an error sending the information. Please click back and try again.</p>
+	
+	<p>If the problem persists, please email us directly <a href="mailto:lucid@lucidsystems.org">lucid@lucidsystems.org</a>.</p>
+	
+	<p>We sincerely apologize for any inconvenience caused.</p>
+</page>

@@ -1,23 +1,23 @@
 /* Copyright (c) 2010 Orion Transfer Ltd. All Rights Reserved. */
 
+body {
+	margin: 0;
+	padding: 0;
+}
+
 body, p, ol, ul, blockquote {
-	font-family: "Skia", verdana, arial, helvetica, sans-serif;
-	line-height: 18px;
-	
-	color: #339;
+	font-family: "Palatino", "Optima", "Skia", verdana, arial, helvetica, sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: menlo, monospace;
 	color: #303;
 	
 	margin-top: 2em;
 	margin-bottom: 1em;
 }
 
-body {
-	background: url(/_static/background.png) #fff center no-repeat fixed;
-	padding: 50px;
+h2 {
+	font-weight: normal;
 }
 
 img {
@@ -37,6 +37,11 @@ p, dl, h3 {
 	margin: 1em;
 }
 
+ul.basic, dl.basic {
+	line-height: 1.4em;
+	margin: 3em;
+}
+
 h3 {
 	border-bottom: 1px solid #ccf;
 }
@@ -48,4 +53,249 @@ ul {
 
 h3, h4, h5, h6 {
 	font-weight: normal;
+}
+
+/* Main Page Design */
+
+.header {
+	position: relative;
+	height: 100px;
+	
+	background: url("/_static/gd2.png") repeat-x;
+	
+	border-bottom: 8px solid #333;
+}
+
+.header .logo {
+	background: url("/_static/logo-small.png") no-repeat 10pt 50%;
+	position: absolute;
+	left: 0; top: 0; bottom: 0; right: 0;
+}
+
+.header .menu {
+	position: absolute;
+	
+	left: 20%;
+	right: 0px;
+	bottom: 0px;
+	top: 18px;
+	
+	padding-right: 2em;
+	padding-bottom: 0.2em;
+}
+
+.header .menu .link {
+	text-decoration: none;
+	
+	display: block;
+	float: left;
+	
+	margin: 1em;
+	
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	border-radius: 8px;
+	background-color: #f0f0f0;
+	
+	padding: 0.5em;
+	padding-top: 0.8em;
+	text-align: center;
+	
+	-moz-box-shadow: 2px 2px 5px #ccc;
+	-webkit-box-shadow: 2px 2px 5px #ccc;
+	box-shadow: 2px 2px 5px #ccc;
+}
+
+.header .menu .link:hover {
+	background-color: #fff;
+}
+
+.header .menu .search {
+	float: right;
+	width: 20em;
+}
+
+.header .menu .search input[type=search] {
+	width: 60%;
+}
+
+.search form * {
+	vertical-align: bottom;
+}
+
+.content {
+	margin: 1em 4em 1em;
+}
+
+/* Forms v2.2 */
+form.central {
+	margin: auto;
+	width: 90%;
+}
+
+form.basic legend {
+	background-color: #eee;
+	border: 1px solid #ccc;
+	font-size: 1.2em;
+	padding: 0.5em;
+}
+
+form.basic dl {
+	padding: 0px;
+	margin: 0 4em 0;
+	list-style: none;
+}
+
+form.basic dt {
+	margin-top: 0.5em;
+	margin-bottom: 0.1em;
+}
+
+form.basic dd {
+	margin: 0 2em 0.5em;
+}
+
+form.basic dd + dt {
+	margin-top: 2em;
+}
+
+form.basic fieldset {
+	border: 1px solid #ccc;
+	margin: 2.5em 4em 2.5em;
+	padding: 1em;
+	
+	color: black;
+	background: #bbb url(/_static/gd2.png) repeat-x top;
+}
+
+form.basic input, form.basic textarea {
+	margin: 0px;
+}
+
+form.basic input[type="text"],
+form.basic input[type="password"] {
+	width: 50%;
+}
+
+form.basic textarea {
+	width: 100%;
+	height: 100px;
+}
+
+form.basic fieldset.footer {
+	text-align: right;
+}
+
+form.basic label.error {
+	float: right;
+	color: red;
+}
+
+/* Tables */
+
+table.basic {
+	border-collapse: collapse;
+	margin: auto;
+	width: 90%;
+	margin-top: 2em;
+	margin-bottom: 4em;
+}
+
+table.basic thead th {
+	font-family: "Lucida Grande", sans-serif;
+	font-weight: normal;
+	font-size: 13pt;
+
+	color: #003399;
+	border-bottom: 2px solid #6678b2;
+	padding: 10px 8px;
+}
+
+table.basic tbody th,
+table.basic tbody td {
+	border: none;
+	padding: 9px 8px 0px 8px;
+	color: #666699
+}
+
+table.basic tbody th {
+	text-align: left;
+	text-decoration: underline;
+	padding-top: 12px;
+}
+
+table.basic tbody tr:hover td {
+	text-shadow: #ccc 1px 1px 4px;
+}
+
+/* Search Results */
+
+.search {
+	margin: 1em;
+	
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	border-radius: 8px;
+	background-color: #f0f0f0;
+	
+	padding: 0.5em;
+	text-align: center;
+	
+	-moz-box-shadow: 2px 2px 5px #ccc;
+	-webkit-box-shadow: 2px 2px 5px #ccc;
+	box-shadow: 2px 2px 5px #ccc;
+}
+
+.search input[type=search] {
+	width: 40%;
+	margin: 0 1em 0;
+}
+
+dl.search-results dt {
+	margin-top: 1em;
+}
+
+dl.search-results dt {
+	font-size: 1.2em;
+}
+
+dl.search-results dd.href {
+	color: green;
+	font-family: arial, sans-serif;
+	font-size: 0.8em;
+}
+
+#footer {
+	text-align: center;
+	
+	padding: 5pt;
+	font-size: 8pt;
+	
+	margin-top: 10em;
+}
+
+/* Page Navigation Bar */
+.navigation {
+	height: 28px;
+	position: relative;
+}
+
+.navigation a {
+	text-decoration: none;
+}
+
+.navigation ul.trail {
+	padding-left: 22px;
+}
+
+.navigation ul, .navigation li {
+	list-style: none;
+	float:left;
+	line-height: 25px;
+	margin-right: 11px;
+}
+
+.navigation ul {
+	padding: 0;
+	margin: 2px 0 2px;
 }

@@ -1,2 +1,17 @@
+welcome:
+    order: 1
+hardware:
+    order: 10
+    header: true
+software:
+    order: 20
+    header: true
+consulting:
+    order: 8
+    header: true
 errors:
+    display: false
+search:
+    display: false
+lucid:
     display: false

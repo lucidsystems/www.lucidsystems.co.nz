@@ -1,0 +1,17 @@
+<?r prev = nil ?>
+<div class="navigation">
+	<ul class="trail">
+	<?r Path.create(first.node.uri_path || attributes['path']).ascend.reverse.each do |path| ?>
+		<?r link = parent.node.links(path.dirname, :name => path.basename, :locale => request.current_locale).first
+		
+		next if link == prev
+		
+		if link ?>
+		<li>#{link.to_href}</li><li>/</li>
+		<?r end 
+		
+		prev = link
+		?>
+	<?r end ?>
+	</ul>
+</div>

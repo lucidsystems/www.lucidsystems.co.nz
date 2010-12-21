@@ -1,0 +1,21 @@
+<page>
+	<heading>Professional Lighting</heading>
+	
+	<p>We are able to provide a wide range of professional lighting services and consultation.</p>
+	
+	<h2>Lighting Rental/Hire Service</h2>
+	
+	<p>We have a large amount of lighting gear available for hire. All equipment comes with an experienced lighting technician to assist with the setup and use of the equipment.</p>
+	
+    <table class="basic">
+        <thead>
+            <tr><th>Service</th><th>Cost</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>LitePanels + Lighting Technician</td><td>$200 / hour</td></tr>
+            <tr><td>LitePanels + Lighting Technician</td><td>$600 / day</td></tr>
+        </tbody>
+    </table>
+	
+	<p>For more information regarding our professional lighting services please <a href="/lucid/contact-us">contact us</a> with your requirements.</p>
+</page>

@@ -7,6 +7,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=8" />
 		
 		<link rel="icon" type="image/png" href="/_static/icon.png" />
+		<link rel="stylesheet" href="/_static/site.css" type="text/css" media="screen" />
 		<link rel="stylesheet" href="/_static/front.css" type="text/css" media="screen" />
 		
 		<script src="/_static/jquery-1.4.2.min.js" type="text/javascript"></script>
@@ -21,39 +22,23 @@
 	</head>
 
 	<body>
-		<div class="search">
-			<form action="/search">
-				<label>How can we help you today?
-					<input type="search" />
-				</label>
-				<input type="submit" value="Search" />
-			</form>
+		<search label="How may we help you today?" />
+
+		<div class="quad tl">
+			<a href="/software" class="box"><h1>Software</h1></a>
 		</div>
+		<div class="quad bl">
+			<a href="/hardware" class="box"><h1>Hardware</h1></a>
+		</div>
+		<div class="quad tr">
+			<a href="/consulting" class="box"><h1>Consulting</h1></a>
+		</div>
+		<div class="quad br"></div>
 		
-		<div class="quad" id="tl">
-			<ul>
-				<li><a href="/software/backup">Backup</a></li>
-				<li><a href="/software/printing">Printing Works</a></li>
-			</ul>
-			<h1>Software</h1>
-			<div class="box"></div>
-		</div>
-		<div class="quad" id="bl"><div class="box"></div>
-			<h1>Hardware</h1>
-			<ul>
-				<li><a href="/hardware/storage">Computer Storage</a></li>
-				<li><a href="/hardware/lighting">Professional Lighting</a></li>
-				<li><a href="/hardware/lighting">Personal Lighting</a></li>
-			</ul>
-		</div>
-		<div class="quad" id="tr">
-			<ul>
-				<li><a href="/consulting/storage-and-network">Storage and Network</a></li>
-				<li><a href="/consulting/photography-and-lighting">Photography and Lighting</a></li>
-			</ul>
-			<h1>Consulting</h1>
-			<div class="box"></div>
-		</div>
-		<div class="quad" id="br"></div>
+		<footer />
+		
+		<env only="production">
+			<google_analytics id="UA-2484649-1" />
+		</env>
 	</body>
 </html>

@@ -1,0 +1,11 @@
+<page>
+	<heading>Software</heading>
+	
+	<p>Lucid Information Systems Ltd has developed several software tools primarily aimed at system administration and storage.</p>
+	
+	<ul>
+		<?r links.each do |link| ?>
+		<li>#{link.to_href}</li>
+		<?r end ?>
+	</ul>
+</page>

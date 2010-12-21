@@ -1,0 +1,11 @@
+<page>
+	<heading>Consulting</heading>
+	
+	<p>Lucid Information Systems Ltd provides a wide variety of consulting services to assist you with storage and network related developments.</p>
+	
+	<ul>
+		<?r links.each do |link| ?>
+		<li>#{link.to_href}</li>
+		<?r end ?>
+	</ul>
+</page>

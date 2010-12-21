@@ -4,12 +4,15 @@ UTOPIA_ENV = (ENV['UTOPIA_ENV'] || ENV['RACK_ENV'] || :development).to_sym
 $LOAD_PATH << File.join(File.dirname(__FILE__), "lib")
 
 # It is recommended that you always explicity specify the version of the gem you are using.
-gem 'utopia', "0.9.40"
+gem 'utopia', "0.9.41"
 require 'utopia/middleware/all'
 require 'utopia/tags/env'
 
 gem 'rack-contrib'
 require 'rack/contrib'
+
+gem 'xapian-rack'
+require 'xapian/rack/search'
 
 # Utopia relies heavily on accurately caching resources
 gem 'rack-cache'
@@ -30,6 +33,17 @@ end
 
 use Rack::ContentLength
 use Utopia::Middleware::Logger
+
+use Xapian::Rack::Search, {
+	:database => Utopia::Middleware.default_root('xapian.db'),
+	:roots => [
+		'/',
+		'http://www.led-lighting.co.nz/',
+		'http://www.litepanels.co.nz/',
+		'http://www.drobo.co.nz/',
+	],
+	:domains => ["www.led-lighing.co.nz", "www.litepanels.co.nz", "www.drobo.co.nz"]
+}
 
 use Utopia::Middleware::Redirector, {
 	:strings => {

@@ -1,0 +1,21 @@
+<page>
+	<heading>Training And Education</heading>
+	
+	<p>The Lucid Dojo is a place where you can up-skill and learn about the latest computer technologies and tools. Courses are open-ended and focused on the individual.</p>
+	
+	<h2>2011 Courses</h2>
+	
+	<p>We are currently planning courses for January 2011:</p>
+	
+	<table class="basic">
+		<thead>
+			<tr><th>Course</th><th>Instructor</th><th>Date</th><th>Places Remaining</th><th>Cost</th></tr>
+		</thead>
+		<tbody>
+			<tr><td>A Gentle Introduction to Bash</td><td>Henri Shustak</td><td>17th January 2011</td><td>6</td><td>$400</td></tr>
+			<tr><td>A Gentle Introduction to Python</td><td>Samuel Williams</td><td>18th, 19th January 2011</td><td>6</td><td>$800</td></tr>
+			<tr><td>A Gentle Introduction to Ruby</td><td>Samuel Williams</td><td>20th, 21th January 2011</td><td>6</td><td>$800</td></tr>
+			<tr><td>Teaching Computer Science in High Schools</td><td>Tim Bell, Samuel Williams</td><td>24th, 25th January 2011</td><td>6</td><td>$800</td></tr>
+		</tbody>
+	</table>
+</page>

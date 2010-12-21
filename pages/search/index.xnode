@@ -1,0 +1,42 @@
+<?r response.do_not_cache! ?>
+<page>
+	<?r
+		query = request[:query] || ""
+		search = Xapian::Rack.get(request.env)
+	?>
+	
+	<?r if query == "" ?>
+	<heading>Search</heading>
+	<?r else ?>
+	<heading>Search Results</heading>
+	<?r end ?>
+	
+	<!-- <search /> -->
+	
+	<?r
+		if query != ""
+			results = Xapian::Rack.find(request.env, query, {:options => Xapian::QueryParser::FLAG_WILDCARD})
+	?>
+	
+	<p>Approximately #{results.matches_estimated} results found out of #{search.database.doccount} total for #{query.dump.to_html}:</p>
+	
+	<dl class="search-results">
+	<?r 
+			results.matches.each do |m|
+				$stderr.puts "Resource = #{m.document.data}\n----\n\n"
+				resource = YAML::load(m.document.data)
+				metadata = resource[:metadata]
+	?>
+		<dt><a href="#{resource[:name].to_html}">#{metadata[:title].to_html}</a> (#{m.percent}% relevance)</dt>
+		<?r if metadata[:description] ?>
+		<dd>#{metadata[:description].to_html}</dd>
+		<dd class="href">#{URI.parse("http://www.lucidsystems.org/") + resource[:name]}</dd>
+		<?r end ?>
+	<?r
+			end
+	?>
+	</dl>
+	<?r
+		end
+	?>
+</page>

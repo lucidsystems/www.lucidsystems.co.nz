@@ -1,0 +1,8 @@
+<div class="header">
+	<div class="logo">
+		<div class="quad tl"><div class="box"></div></div>
+		<div class="quad bl"><div class="box"></div></div>
+		<div class="quad tr"><div class="box"></div></div>
+		<div class="quad br"></div>
+	</div>
+</div>
