@@ -8,4 +8,8 @@
 		<li>#{link.to_href}</li>
 		<?r end ?>
 	</ul>
+	
+	<div class="gallery">
+		<img src="LitePanels-MicroPro.jpg" alt="LitePanels MicroPro"/>
+	</div>
 </page>

@@ -299,3 +299,15 @@ dl.search-results dd.href {
 	padding: 0;
 	margin: 2px 0 2px;
 }
+
+/* Image/Photo Gallery */
+
+.gallery {
+	text-align: center;
+	margin: 2em;
+}
+
+.gallery img {
+	vertical-align: middle;
+}
+
