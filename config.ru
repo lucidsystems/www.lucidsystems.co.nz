@@ -18,6 +18,13 @@ require 'xapian/rack/search'
 gem 'rack-cache'
 require 'rack/cache'
 
+gem 'mail'
+require 'mail'
+
+Mail.defaults do
+  delivery_method :smtp, { :enable_starttls_auto => false }
+end
+
 if UTOPIA_ENV == :development
 	use Rack::ShowExceptions
 else

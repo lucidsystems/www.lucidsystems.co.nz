@@ -13,7 +13,7 @@
 	<div class="main">
 		<p>Please fill out the following form to send us a message. If you want a response, please include a valid "Reply To:" email address.</p>
 
-		<form action="/lucid/contact-us/index" method="post" class="basic central_form" id="contact">
+		<form action="/lucid/contact-us/send" method="post" class="basic central_form" id="contact">
 			<fieldset>
 				<dl>
 					<dt><label for="subject">Subject:</label></dt>

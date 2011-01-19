@@ -36,3 +36,11 @@ def on_index(path, request)
 	
 	return nil
 end
+
+def on_send(path, request)
+	begin
+		return on_index(path, request)
+	rescue
+		return :unavailable
+	end
+end
