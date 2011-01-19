@@ -24,11 +24,11 @@ else
 	use Utopia::Middleware::ExceptionHandler, "/errors/exception"
 
 	# Fill out these details to receive email reports of exceptions when running in a production environment.
-	# use Rack::MailExceptions do |mail|
-	# 	mail.from $MAIL_EXCEPTIONS_FROM
-	# 	mail.to $MAIL_EXCEPTIONS_TO
-	# 	mail.subject "Website Error: %s"
-	# end
+	use Rack::MailExceptions do |mail|
+		mail.from "www@lucidsystems.org"
+		mail.to "lucid@lucidsystems.org"
+		mail.subject "www.lucidsystems.org Error: %s"
+	end
 end
 
 use Rack::ContentLength
