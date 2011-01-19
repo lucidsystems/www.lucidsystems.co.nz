@@ -1,7 +1,87 @@
 <div id="footer">
 		<!--  It took {{benchmark}}s to render. -->
 		&copy; 2010 <a href="http://www.lucidsystems.org/">Lucid Information Systems Ltd</a>.
-		| <a href="/lucid/contact-us">Contact Us</a>
+		| <a href="/lucid/contact-us" onclick="javascript:$('#contact-popup').slideDown(); return false;">Contact Us</a>
+		| <a href="http://twitter.com/lucid_systems" style="vertical-align: -50%;"><img src="/_static/twitter-icon.png" /></a>
 		| <a href="/lucid/terms-and-conditions">Disclaimer</a>
 		| Website designed by <a href="http://www.oriontransfer.co.nz/">Orion Transfer Ltd</a>
+</div>
+
+<div id="contact-popup" style="display: none; position: fixed; bottom: 0px">
+	<a class="close" href="#" onclick="javascript:$('#contact-popup').slideUp(); return false;"></a>
+	
+	<div class="main">
+		<p>Please fill out the following form to send us a message. If you want a response, please include a valid "Reply To:" email address.</p>
+
+		<form action="/lucid/contact-us/index" method="post" class="basic central_form" id="contact">
+			<fieldset>
+				<dl>
+					<dt><label for="subject">Subject:</label></dt>
+					<dd><input type="text" name="subject" /></dd>
+					<dt><label for="from">Reply To:</label></dt>
+					<dd><input type="text" name="from" /></dd>
+					<dt><label for="message">Message:</label></dt>
+					<dd><textarea name="message"></textarea></dd>
+				</dl>
+			</fieldset>
+			<fieldset class="footer">
+				<input type="submit" value="Send Message" />
+			</fieldset>
+		</form>
+	</div>
+	
+	<div class="sending" style="display: none">
+		<p>Sending your message...</p>
+	</div>
+	
+	<div class="success" style="display: none">
+		<p>The message was sent successfully. <a href="#" onclick="javascript:resetContactPopup(); return false;">Send Another</a>.</p>
+	</div>
+	
+	<div class="error" style="display: none">
+		<p>An error occurred. Please <a href="#" onclick="javascript:resetContactPopup(); return false;">try again</a> or send us
+			an <a href="lucid@lucidsystems.org">email</a>.
+		</p>
+	</div>
+
+	<script type="text/javascript">
+		function resetContactPopup () {
+			$('#contact-popup .sending').slideUp();
+			$('#contact-popup .error').slideUp();
+			$('#contact-popup .success').slideUp();
+			$('#contact-popup .main').slideDown();
+		}
+		
+		$(function() {
+			var contact = $("#contact");
+
+			contact.validate({
+				rules: {
+					subject: "required",
+					from: {
+						email: true
+					},
+					message: "required"
+				},
+				submitHandler: function() {
+					$('#contact-popup .main').slideUp();
+					$('#contact-popup .sending').slideDown();
+					
+					$.ajax({
+						url: contact.attr('action'),
+						type: 'post',
+						data: contact.serialize(),
+						success: function() {
+							$('#contact-popup .sending').slideUp();
+							$('#contact-popup .success').slideDown();
+						},
+						error: function() {
+							$('#contact-popup .sending').slideUp();
+							$('#contact-popup .error').slideDown();
+						}
+					});
+				}
+			});
+		})
+	</script>
 </div>

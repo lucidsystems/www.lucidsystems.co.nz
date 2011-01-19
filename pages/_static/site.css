@@ -311,3 +311,29 @@ dl.search-results dd.href {
 	vertical-align: middle;
 }
 
+/* Contact Popup */
+
+#contact-popup {
+	position: fixed;
+	left: 0; right: 0;
+	bottom: 0;
+	
+	color: white;
+	
+	background-color: black;
+	background-color: rgba(0, 0, 0, 0.8);
+	
+	font-size: 80%;
+}
+
+#contact-popup a.close {
+	background-image: url("close.png");
+	float: right;
+	
+	display: block;
+	
+	width: 32px;
+	height: 32px;
+	
+	margin: 0.5em;
+}
