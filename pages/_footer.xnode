@@ -1,7 +1,7 @@
 <div id="footer">
 		<!--  It took {{benchmark}}s to render. -->
 		&copy; 2010 <a href="http://www.lucidsystems.org/">Lucid Information Systems Ltd</a>.
-		| <a href="/lucid/contact-us" onclick="javascript:$('#contact-popup').slideDown(); return false;">Contact Us</a>
+		| <a href="/lucid/contact-us" onclick="javascript:resetContactPopup(true); return false;">Contact Us</a>
 		| <a href="http://twitter.com/lucid_systems" style="vertical-align: -50%;"><img src="/_static/twitter-icon.png" /></a>
 		| <a href="/lucid/terms-and-conditions">Disclaimer</a>
 		| Website designed by <a href="http://www.oriontransfer.co.nz/">Orion Transfer Ltd</a>
@@ -35,21 +35,32 @@
 	</div>
 	
 	<div class="success" style="display: none">
-		<p>The message was sent successfully. <a href="#" onclick="javascript:resetContactPopup(); return false;">Send Another</a>.</p>
+		<p>The message was sent successfully. <a href="#" onclick="javascript:resetContactPopup(true); return false;">Send Another</a>.</p>
 	</div>
 	
 	<div class="error" style="display: none">
-		<p>An error occurred. Please <a href="#" onclick="javascript:resetContactPopup(); return false;">try again</a> or send us
+		<p>An error occurred. Please <a href="#" onclick="javascript:resetContactPopup(true); return false;">try again</a> or send us
 			an <a href="lucid@lucidsystems.org">email</a>.
 		</p>
 	</div>
 
 	<script type="text/javascript">
-		function resetContactPopup () {
-			$('#contact-popup .sending').slideUp();
-			$('#contact-popup .error').slideUp();
-			$('#contact-popup .success').slideUp();
-			$('#contact-popup .main').slideDown();
+		function resetContactPopup (show) {
+			var contactPopup = $('#contact-popup');
+			if (contactPopup.is(':hidden')) {
+				$('#contact-popup .sending').hide();
+				$('#contact-popup .error').hide();
+				$('#contact-popup .success').hide();
+				$('#contact-popup .main').show();
+				
+				if (show)
+					contactPopup.slideDown();
+			} else {
+				$('#contact-popup .sending').slideUp();
+				$('#contact-popup .error').slideUp();
+				$('#contact-popup .success').slideUp();
+				$('#contact-popup .main').slideDown();
+			}
 		}
 		
 		$(function() {
