@@ -16,7 +16,7 @@ def on_index(path, request)
 				
 				to 'lucid@lucidsystems.org'
 				subject "www.lucidsystems.org: #{params["subject"]}"
-				body message
+				body message.string
 			end
 
 			File.open("delivery.log", "a") do |fp|
