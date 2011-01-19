@@ -6,12 +6,17 @@ def on_index(path, request)
 		params["from"] = nil if params["from"].length == 0
 		
 		begin
+			message = StringIO.new
+			message.puts "Referrer: #{request.referrer}"
+			message.puts
+			message.puts params["message"]
+			
 			mail = Mail.new do
 				from params["from"] || "anonymous@lucidsystems.org"
 				
 				to 'lucid@lucidsystems.org'
 				subject "www.lucidsystems.org: #{params["subject"]}"
-				body params["message"]
+				body message
 			end
 
 			File.open("delivery.log", "a") do |fp|
