@@ -18,6 +18,35 @@ function Chorus (canvas) {
 
 Chorus.Brushes = {}
 
+Chorus.Brush = function (context) {
+	this.cancelled = false;
+	this.scale = 1.0;
+	this.context = context;
+}
+
+Chorus.Brush.prototype.cancel = function() {
+	this.cancelled = true;
+}
+
+Chorus.Brush.prototype.setScale = function(scale) {
+	this.scale = scale;
+}
+
+Chorus.createBrush = function(name, implementation) {
+	Chorus.Brushes[name] = function(context) {
+		Chorus.Brush.call(this, context);
+	};
+	
+	var clone = function() {}
+	clone.prototype = Chorus.Brush.prototype;
+	
+	Chorus.Brushes[name].prototype = new clone;
+	
+	for (key in implementation) {
+		Chorus.Brushes[name].prototype[key] = implementation[key];
+	}
+}
+
 Chorus.createBackground = function(drawFunction) {
 	var container = $('<div id="chorus-background" style="margin: 0; padding: 0; z-index: -1; position: fixed;"></div>')
 	$('body').prepend(container);
@@ -39,6 +68,7 @@ Chorus.createBackground = function(drawFunction) {
 			canvas.width = window.innerWidth;
 			canvas.height = window.innerHeight;
 			
+			/* call the draw callback */
 			drawFunction(chorus);
 		};
 	} else {
@@ -159,9 +189,9 @@ Chorus.prototype.draw = function(brush, strokes, options) {
 	
 	for (var i = 0; i < strokes.length; i++) {
 		var color = [0, 0, 0], coords;
-		color[0] = Math.floor(strokes[i][0][2] * 255);
+		color[0] = Math.floor(strokes[i][0][0] * 255);
 		color[1] = Math.floor(strokes[i][0][1] * 255);
-		color[2] = Math.floor(strokes[i][0][0] * 255);
+		color[2] = Math.floor(strokes[i][0][2] * 255);
 		
 		if (options.transform) {
 			coords = [];
@@ -175,7 +205,8 @@ Chorus.prototype.draw = function(brush, strokes, options) {
 		
 		last = (function(color, coords, last) {
 			brush.color = color;
-			this.stroke(brush, coords, false, last);
+			
+			this.stroke(brush, coords, options.interpolate, last);
 		}).bind(this, color, coords, last);
 	}
 	
@@ -185,6 +216,9 @@ Chorus.prototype.draw = function(brush, strokes, options) {
 Chorus.prototype.cancel = function() {
 	for (var i = 0; i < this.brushes.length; i++) {
 		this.brushes[i].cancel();
+		
+		if (this.brushes[i].destroy)
+			this.brushes[i].destroy();
 	}
 	
 	this.brushes = [];
@@ -193,8 +227,8 @@ Chorus.prototype.cancel = function() {
 Chorus.prototype.getBrush = function(name, callback) {
 	var brush = new Chorus.Brushes[name](this.context);
 	
+	brush.init();	
 	this.brushes.push(brush);
-	
 	callback(brush);
 }
 

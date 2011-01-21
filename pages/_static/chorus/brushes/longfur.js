@@ -1,17 +1,7 @@
-Chorus.Brushes.LongFur = function(context) {
-	this.init(context);
-}
-
-Chorus.Brushes.LongFur.prototype = {
-	context: null,
-
-	points: null, count: null,
-
-	init: function(context) {
-		this.context = context;
+Chorus.createBrush('LongFur', {
+	init: function() {
 		this.points = new Array();
 		this.count = 0;
-		this.cancelled = false;
 	},
 
 	cancel: function() {
@@ -24,7 +14,7 @@ Chorus.Brushes.LongFur.prototype = {
 	stroke: function(x, y) {
 		if (this.cancelled) return;
 		
-		var i, size, dx, dy, d;
+		var i, size, dx, dy, d, c = 4000;
 		
 		this.context.lineWidth = 1;
 		this.context.globalCompositeOperation = 'source-over';
@@ -39,11 +29,11 @@ Chorus.Brushes.LongFur.prototype = {
 			dy = this.points[i][1] - this.points[this.count][1];
 			d = dx * dx + dy * dy;
 
-			if (d < 4000 && Math.random() > d / 4000)
+			if (d < (c*this.scale) && Math.random() > d / (c*this.scale))
 			{
 				this.context.beginPath();
 				this.context.moveTo(this.points[this.count][0] + (dx * size), this.points[this.count][1] + (dy * size));
-				this.context.lineTo(this.points[i][0] - (dx * size) + Math.random() * 2, this.points[i][1] - (dy * size) + Math.random() * 2);
+				this.context.lineTo(this.points[i][0] - (dx * size) + Math.random() * 20, this.points[i][1] - (dy * size) + Math.random() * 20);
 				this.context.stroke();
 			}
 		}
@@ -53,4 +43,4 @@ Chorus.Brushes.LongFur.prototype = {
 
 	strokeEnd: function() {
 	}
-}
+});

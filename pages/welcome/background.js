@@ -2,17 +2,10 @@ $(function() {
 	Chorus.createBackground(function(chorus) {
 		chorus.cancel();
 		
-		chorus.getBrush('LongFur', function(brush) {
-			brush.color = [255, 255, 155];
-			var x = chorus.canvas.width * Math.random(), y = chorus.canvas.height * 0.1 * Math.random();
-
-			chorus.stroke(brush, [
-				[x + 100, y + 100], [x + 200, y + 100], [x + 200, y + 200], [x + 100, y + 200],
-				[x + 110, y + 110], [x + 210, y + 110], [x + 210, y + 210], [x + 110, y + 210],
-				[x + 100, y + 100], [x + 200, y + 100], [x + 200, y + 200], [x + 100, y + 200],
-				[x + 110, y + 110], [x + 210, y + 110], [x + 210, y + 210], [x + 110, y + 210]
-			], 16);
-		});
+		var scale = chorus.canvas.height / 1024.0;
+		var screenTransform = Chorus.scale([scale, scale]);
+		
+		var areaScale = (chorus.canvas.height * chorus.canvas.width) / (1280.0 * 1024.0);
 /*
 		chorus.getBrush('Sketchy', function(brush) {
 			brush.color = [80, 200, 60];
@@ -35,13 +28,26 @@ $(function() {
 		var eS = Math.max(0.8, Math.random());
 		
 		chorus.getBrush('Sketchy', function(brush) {
+			brush.setScale(areaScale * 0.1);
+			
 			var sx = eS, sy = sx;
 			if (Math.random() < 0.5) sx = sx * -1;
 
 			chorus.draw(brush, Elephant, {
-				transform: Chorus.translate([eX, eY], Chorus.scale([sx, sy]))
+				transform: Chorus.translate([eX, eY], Chorus.scale([sx, sy], screenTransform))
 			});
-		})
+		});
+		
+		chorus.getBrush('LongFur', function(brush) {
+			brush.setScale(areaScale * 0.5)
+			
+			var x = chorus.canvas.width * Math.random(), y = chorus.canvas.height * 0.2 * Math.random();
+
+			chorus.draw(brush, Sun, {
+				transform: Chorus.translate([x, y], Chorus.scale([eS * 2.0, eS * 2.0], screenTransform)),
+				interpolate: 8
+			});
+		});
 /*
 		if (Math.random() < 0.8) {
 			chorus.getBrush('Web', function(brush) {
@@ -55,13 +61,15 @@ $(function() {
 		}
 */
 		chorus.getBrush('Sketchy', function(brush) {
+			brush.setScale(areaScale * 0.8);
+			
 			var x = (chorus.canvas.width / 5) + (100 * Math.random()), y = eY - 500;
 			
 			var sx = Math.max(2.8, Math.random() * 3.5), sy = sx;
 			if (Math.random() < 0.5) sx = sx * -1;
 			
 			chorus.draw(brush, Tree, {
-				transform: Chorus.translate([x, y], Chorus.scale([sx, sy]))
+				transform: Chorus.translate([x, y], Chorus.scale([sx, sy], screenTransform))
 			});
 		})
 	});

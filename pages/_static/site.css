@@ -63,7 +63,7 @@ h3, h4, h5, h6 {
 	
 	background: url("/_static/gd2.png") repeat-x;
 	
-	border-bottom: 8px solid #333;
+	border-bottom: 2px solid #333;
 }
 
 .header .logo {
@@ -120,17 +120,18 @@ h3, h4, h5, h6 {
 }
 
 .search form * {
-	vertical-align: bottom;
+	vertical-align: middle;
 }
 
 .content {
-	margin: 1em 4em 1em;
+	padding: 1em 4em 1em;
 }
 
 /* Forms v2.2 */
 form.central {
 	margin: auto;
 	width: 90%;
+	clear: both;
 }
 
 form.basic legend {
@@ -265,15 +266,6 @@ dl.search-results dd.href {
 	font-size: 0.8em;
 }
 
-#footer {
-	text-align: center;
-	
-	padding: 5pt;
-	font-size: 8pt;
-	
-	margin-top: 10em;
-}
-
 /* Page Navigation Bar */
 .navigation {
 	height: 28px;
@@ -309,6 +301,27 @@ dl.search-results dd.href {
 
 .gallery img {
 	vertical-align: middle;
+}
+
+/* Footer */
+
+#footer {
+	position: fixed;
+	
+	bottom: 0;
+	left: 0; right: 0;
+	
+	padding: 5pt;
+	
+	font-size: 0.8em;
+	text-align: center;
+	
+	background-color: white;
+	background-color: rgba(255, 255, 255, 0.95);
+}
+
+.content {
+	padding-bottom: 3em;
 }
 
 /* Contact Popup */

@@ -1,2 +1,15 @@
 <page>
+	<search label="How may we help you today?" />
+	
+	<div class="quad tl">
+		<a href="/solutions" class="box"><h1>Solutions</h1></a>
+	</div>
+	<div class="quad bl">
+		<a href="/products" class="box"><h1>Products</h1></a>
+	</div>
+	<div class="quad tr">
+		<a href="/services" class="box"><h1>Services</h1></a>
+	</div>
+	
+	<div class="quad br"></div>
 </page>

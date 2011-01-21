@@ -20,22 +20,14 @@
 		
 		<script src="elephant.js" type="text/javascript"></script>
 		<script src="tree.js" type="text/javascript"></script>
+		<script src="sun.js" type="text/javascript"></script>
 		<script src="background.js" type="text/javascript"></script>
 	</head>
 
 	<body>
-		<search label="How may we help you today?" />
-
-		<div class="quad tl">
-			<a href="/software" class="box"><h1>Software</h1></a>
+		<div class="content">
+			<content />
 		</div>
-		<div class="quad bl">
-			<a href="/hardware" class="box"><h1>Hardware</h1></a>
-		</div>
-		<div class="quad tr">
-			<a href="/consulting" class="box"><h1>Consulting</h1></a>
-		</div>
-		<div class="quad br"></div>
 		
 		<footer />
 		

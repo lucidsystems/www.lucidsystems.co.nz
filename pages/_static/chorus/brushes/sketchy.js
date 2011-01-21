@@ -1,19 +1,10 @@
-Chorus.Brushes.Sketchy = function(context) {
-	this.init(context);
-}
-
-Chorus.Brushes.Sketchy.prototype = {
-	context: null,
-
-	prevx: null, prevy: null,
-
-	points: null, count: null,
-
-	init: function(context) {
-		this.context = context;
-
+Chorus.createBrush('Sketchy', {
+	init: function() {
 		this.points = new Array();
 		this.count = 0;
+		
+		this.prevx = null;
+		this.prevy = null;
 	},
 
 	destroy: function() {
@@ -25,20 +16,22 @@ Chorus.Brushes.Sketchy.prototype = {
 	},
 
 	stroke: function(x, y) {
-		var i, dx, dy, d;
+		if (this.cancelled) return;
+		
+		var i, dx, dy, d, c = 8000;
 
 		this.points.push([ x, y ]);
 
 		this.context.lineWidth = 1;
 		this.context.globalCompositeOperation = 'source-over';
 
-		this.context.strokeStyle = "rgba(" + this.color + ", 0.9)";
+		this.context.strokeStyle = "rgba(" + this.color + ", 0.7)";
 		this.context.beginPath();
 		this.context.moveTo(this.prevx, this.prevy);
 		this.context.lineTo(x, y);
 		this.context.stroke();
 
-		this.context.strokeStyle = "rgba(" + this.color + ", 0.6)";
+		this.context.strokeStyle = "rgba(" + this.color + ", 0.08)";
 
 		for (i = 0; i < this.points.length; i++)
 		{
@@ -46,7 +39,7 @@ Chorus.Brushes.Sketchy.prototype = {
 			dy = this.points[i][1] - this.points[this.count][1];
 			d = dx * dx + dy * dy;
 
-			if (d < 4000 && Math.random() > d / 2000)
+			if (d < (c*2*this.scale) && Math.random() > d / (c*this.scale))
 			{
 				this.context.beginPath();
 				this.context.moveTo(this.points[this.count][0] + (dx * 0.3), this.points[this.count][1] + (dy * 0.3));
@@ -62,6 +55,5 @@ Chorus.Brushes.Sketchy.prototype = {
 	},
 
 	strokeEnd: function() {
-		
 	}
-}
+});
