@@ -16,8 +16,12 @@
 	display: inline-block;
 }
 
+a.box {
+	text-decoration: none;
+}
+
 .box:hover {
-	background-color: rgb(59,20,186);
+	background-color: rgb(60,20,200);
 }
 
 .box h1 {
