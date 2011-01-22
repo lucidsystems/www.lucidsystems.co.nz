@@ -1,0 +1,122 @@
+litepanels:
+    description: "LitePanels offer a wide range of LED lighting solutions for film and photography."
+    uri: http://www.litepanels.co.nz/
+    tags: ["Lighting"]
+led-tape:
+    title: "LED Tape"
+    description: "LED Tape is the modern way to add mood and style to your home, office or entertainment venue."
+    uri: http://www.led-lighting.co.nz/
+    tags: ["Lighting"]
+led-tubes:
+    title: "LED Tubes"
+    description: "LED Tubes are the green way to save money and reduce maintenance costs in large office buildings."
+    uri: http://www.led-lighting.co.nz/
+    tags: ["Lighting"]
+drobo:
+    title: "Drobo Storage Robot"
+    description: "The Drobo Storage Robot takes ease of use and expandability to the next level."
+    uri: http://www.drobo.co.nz/
+    tags: ["Storage"]
+wiebetech:
+    title: "WiebeTech"
+    description: "WiebeTech provide storage enclosures featuring advanced encryption and forensics features."
+    uri: http://www.wiebetech.com/
+    tags: ["Storage"]
+omni:
+    title: "The Omni Group"
+    description: "The Omni Group produce a fantastic range of software products including tools for diagrams, graphs, and organisation."
+    uri: http://www.omnigroup.com/
+    tags: ["Software"]
+pelican:
+    title: "Pelican Products"
+    description: "Pelican Products is a global manufacturer of advanced lighting systems, rugged protector cases and shipping containers."
+    uri: http://www.pelican.com/
+    tags: ["Cases", "Lighting"]
+active-storage:
+    title: "Active Storage"
+    description: "High-performance high-availability RAID storage for media professionals."
+    uri: http://www.activestorage.com/
+    tags: ["Storage"]
+allied-telesis:
+    description: "Solutions for home, education and corporate computer networks of all sizes."
+    uri: http://www.alliedtelesis.co.nz/
+    tags: ["Network"]
+caldigit:
+    title: "CalDigit"
+    description: "Fast, reliable and secure storage solutions."
+    uri: http://www.caldigit.com/
+    tags: ["Storage"]
+powermate:
+    title: "PowerMate"
+    description: "Accurate and portable energy measurement devices."
+    uri: http://www.power-mate.com.au/
+    tags: ["Monitoring"]
+thermo-fisher-scientific:
+    title: "ThermoFisher Scientific"
+    description: "Superior analytical instruments, laboratory equipment, software, services, consumables and reagents, including water loggers."
+    uri: http://www.thermofisher.com/
+    tags: ["Monitoring"]
+xrackpro:
+    title: XRackPro
+    description: "Equipment rack solutions for environments that require low noise levels."
+    uri: http://www.xrackpro.com/
+    tags: ["Infrastructure"]
+ledz:
+    title: LEDZ
+    description: LED lighting products designed for the entertainment, television, broadcast and motion picture industries.
+    uri: http://www.led-z.com/
+    tags: ["Lighting"]
+uptime-devices:
+    description: High quality easily expandable environmental monitoring solutions.
+    uri: http://www.uptimedevices.com
+    tags: ["Monitoring"]
+western-digital:
+    description: Reliable and fast desktop and server storage solutions.
+    uri: http://www.wdc.com/en/
+    tags: ["Storage"]
+vmware:
+    title: VMware
+    description: Advanced virtualisation and server management.
+    uri: http://www.vmware.com/
+    tags: ["Software", "Infrastructure"]
+noga-holdit:
+    description: Hghly reliable flexible arms that can be positioned to any angle, then locked.
+    uri: http://www.holditarm.com/
+    tags: ["Videography", "Photography"]
+anton-bauer:
+    description: Advanced power and battery systems for LED lighting solutions.
+    uri: http://www.antonbauer.com/
+    tags: ["Lighting", "Videography", "Photography"]
+endian:
+    description: Endian Firewall Community is an open source netowrking solution which provides a complete secure and stable firewall.
+    uri: http://www.endian.com/
+    tags: ["Network", "Firewall"]
+fortinet:
+    description: Enterprise firewall solutions including both hardware, software and support.
+    uri: http://www.fortinet.com/
+    tags: ["Network", "Firewall"]
+paloalto-networks:
+    title: Palo Alto Networks
+    description: "Delivers advanced firewall technology that provides policy based visibility and control over applications, users and threats."
+    uri: http://www.paloaltonetworks.com/
+    tags: ["Network", "Firewall"]
+hawk-woods:
+    title: "Hawk-Woods"
+    description: "Experience producer of innovative products for camera operators, sound recordists and lighting personnel, including batteries, chargers, power adaptors, cables and plugs."
+    uri: http://www.hawkwoods.com/
+    tags: ["Videography", "Photography"]
+apc:
+    title: APC
+    description: "Leading manufacturer in server room equipment including UPSs and power conditioning devices."
+    uri: http://www.apc.com/
+    tags: ["Infratstructure"]
+aja:
+    title: AJA Video Systems
+    description: "A leading manufacturer of high-quality and cost-effective digital video interface, conversion and desktop solutions supporting the professional broadcast and post-production industries."
+    uri: http://www.aja.com/
+    tags: ["Videography"]
+it-watchdogs:
+    title: ITWatchDogs
+    description: "Manufactures climate and power monitoring systems that enable administrators to monitor server room conditions through a web browser with live video feed and current measurements of temperature, humidity, air flow, light, sound, power, water leakage and door position."
+    uri: http://www.itwatchdogs.com/
+    tags: ["Monitoring"]

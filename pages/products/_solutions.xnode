@@ -1,0 +1,56 @@
+<script src="/_static/jquery.quicksand.js" type="text/javascript"></script>
+<link rel="stylesheet" href="solutions.css" type="text/css" media="screen" />
+
+<?r
+	tags = {}
+	solutions = links("/products", :files => false)
+	
+	solutions.each do |solution|
+		(solution[:tags] || []).each do |tag|
+			(tags[tag] ||= []) << solution
+		end
+	end
+?>
+	
+<div class="tags">
+	<a href="#">All</a>
+	<?r tags.keys.each do |tag| ?>
+	<a href="#" name="#{tag}">#{tag.to_title}</a>
+	<?r end ?>
+</div>
+
+<ul class="solutions">
+	<?r solutions.each do |solution| ?>
+	<li data-id="#{solution.name}" class="#{(solution[:tags] || []).join(' ')}">
+		<a href="#{solution.href}"><div class="title">#{solution.title}</div>
+			<img src="/solutions/_images/#{solution.name}.png" />
+		</a>
+	</li>
+	<?r end ?>
+</ul>
+
+<script type="text/javascript">
+	$(function() {
+		var solutions = $('.solutions').clone();
+		var tags = $('.tags a');
+		
+		$('.tags a').click(function(e) {
+			if ($(this).hasClass('selected')) return;
+			
+			var tag = this.name, children = solutions;
+			
+			if (tag) {
+				children = $('li.' + tag, solutions);
+			} else {
+				children = $('li', solutions);
+			}
+			
+			tags.removeClass('selected');
+			$(this).addClass('selected');
+			
+			$('.solutions').quicksand(children);
+			
+			e.preventDefault();
+		});
+	});
+</script>
