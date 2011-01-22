@@ -4,19 +4,6 @@
 	padding: 0;
 }
 
-a {
-	text-decoration: none;
-	color: #66e;
-}
-
-a:visited {
-	color: #99f;
-}
-
-a:hover {
-	color: #33a;
-}
-
 .box {
 	display: block;
 	

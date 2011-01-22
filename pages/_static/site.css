@@ -28,8 +28,12 @@ a {
 	color: #33a;
 }
 
+a:visited {
+	color: #33a;
+}
+
 a:hover {
-	color: #55c;
+	color: #00f;
 }
 
 p, dl, h3 {
