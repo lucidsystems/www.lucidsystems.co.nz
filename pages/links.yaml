@@ -1,12 +1,12 @@
 welcome:
     order: 1
-hardware:
+products:
     order: 10
     header: true
-software:
+services:
     order: 20
     header: true
-consulting:
+solutions:
     order: 8
     header: true
 errors:

@@ -1,0 +1,40 @@
+<page>
+	<?r @title = "Communicate" ?>
+	
+	<div class="gallery">
+		<img src="communicate.png" alt="Rather than reinvent... communicate!" /><br/>
+		<strong>The Christchurch Information Technology Community</strong>
+	</div>
+
+	<p>Communicate provides a friendly environment where administrators,
+		programmers and teachers are able to network, share solutions and
+		discuss topics relating to computers.</p>
+	
+	<p>Participants may sit back and listen to the demonstrations and
+		discussions. However, everyone is encouraged to share something even if
+		it is just a interesting website or application.</p>
+	
+	<h2>Prizes</h2>
+	
+	<p>There are some great prizes lined up for the first meeting of 2011.
+		However, you must <contact_us>register</contact_us> and attend to be
+		into win.</p>
+
+	<p>Registered attendees go into the raffle for each prize. If you do not
+		want to be part of a raffle you are welcome to tell the person who is
+		drawing the raffle.</p>
+
+	<p>The raffle is generally drawn towards the end of the meeting. Each prize
+		winner has their photo taken for promotional use.</p>
+	
+	<h2>Presenting</h2>
+	
+	<p>If you are interested in presenting, please mention this when you
+		register.</p>
+	
+	<h2>Related Events</h2>
+	
+	<h3>Software Freedom Day 2010</h3>
+	
+	<gallery path="_software-freedom-day" tag="photo_thumbnail" process="photo_thumbnail,large" />
+</page>

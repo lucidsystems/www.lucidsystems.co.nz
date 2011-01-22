@@ -292,15 +292,33 @@ dl.search-results dd.href {
 	margin: 2px 0 2px;
 }
 
-/* Image/Photo Gallery */
+/* Photo Gallery */
 
 .gallery {
 	text-align: center;
-	margin: 2em;
+	padding: 5px;
+}
+
+.gallery .photo_thumbnail, .gallery .thumbnail {
+	display: inline-block;
+	vertical-align: middle;
 }
 
 .gallery img {
-	vertical-align: middle;
+	margin: 10px 10px 5px;
+}
+
+.gallery .photo_thumbnail {
+	width: 320px;
+	margin: 10px;
+}
+
+.gallery .photo_thumbnail .caption {
+	font-size: 0.8em;
+}
+
+#fancybox-title {
+	text-align: center;
 }
 
 /* Footer */

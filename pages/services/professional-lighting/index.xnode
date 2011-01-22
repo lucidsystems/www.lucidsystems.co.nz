@@ -1,0 +1,35 @@
+<page>
+	<heading>Professional Lighting</heading>
+	
+	<p>We are able to provide a wide range of professional lighting services and consultation.</p>
+	
+	<h2>Lighting Rental/Hire Service</h2>
+	
+	<p>We have a large amount of lighting gear available for hire. All equipment comes with an experienced lighting technician to assist with the setup and use of the equipment.</p>
+	
+    <table class="basic">
+        <thead>
+            <tr><th>Service</th><th>Cost</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>LitePanels + Lighting Technician</td><td>$200 / hour</td></tr>
+            <tr><td>LitePanels + Lighting Technician</td><td>$600 / day</td></tr>
+        </tbody>
+    </table>
+	
+	<p>For more information regarding our professional lighting services please <contact_us /> with your requirements.</p>
+	
+	<h2>Equipment</h2>
+	
+	<p>Depending on your requirements we may bring specific types of lights, however the default setup includes all of the following:</p>
+	
+	<ul>
+		<li>1x LitePanels <a href="http://www.litepanels.com/lp/products/ringlite_mini.html">Ringlite Mini</a> + Mounting brackets</li>
+		<li>1x LitePanels <a href="http://www.litepanels.com/lp/products/bicolor.html">Bi-Colour 1x1 Panel</a> + 3m extendable tripod.</li>
+		<li>1x LitePanels <a href="http://www.litepanels.com/lp/products/onebyone.html">Standard 1x1 Panel</a> (Cold White) + 3m extendable tripod + gel packs, honey comb, barn doors.</li>
+		<li>1x <a href="http://www.litepanels.com/lp/products/miniplus.html">LitePanels MiniPlus</a> + Mounting brackets.</li>
+		<li>1x <a href="http://www.litepanels.com/lp/products/micropro.html">LitePanels MicroPro</a> + Mounting brackets.</li>
+		<li>1x <a href="http://www.apc.com/products/resource/include/techspec_index.cfm?base_sku=SUA1500I">Battery Power Supply</a> (for field work of up to 4 hours at a time).</li>
+		<li>Extension cables as needed.</li>
+	</ul>
+</page>
