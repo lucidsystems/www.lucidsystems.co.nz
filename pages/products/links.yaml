@@ -1,7 +1,7 @@
 litepanels:
     description: "LitePanels offer a wide range of LED lighting solutions for film and photography."
     uri: http://www.litepanels.co.nz/
-    tags: ["Lighting"]
+    tags: ["Lighting", "Photography", "Videography"]
 led-tape:
     title: "LED Tape"
     description: "LED Tape is the modern way to add mood and style to your home, office or entertainment venue."
@@ -9,14 +9,14 @@ led-tape:
     tags: ["Lighting"]
 led-tubes:
     title: "LED Tubes"
-    description: "LED Tubes are the green way to save money and reduce maintenance costs in large office buildings."
+    description: "LED Tubes are the green way to save money and reduce maintenance costs in large office buildings and warehouses."
     uri: http://www.led-lighting.co.nz/
     tags: ["Lighting"]
 drobo:
     title: "Drobo Storage Robot"
     description: "The Drobo Storage Robot takes ease of use and expandability to the next level."
     uri: http://www.drobo.co.nz/
-    tags: ["Storage"]
+    tags: ["Storage", "Photography", "Videography"]
 wiebetech:
     title: "WiebeTech"
     description: "WiebeTech provide storage enclosures featuring advanced encryption and forensics features."
@@ -31,12 +31,12 @@ pelican:
     title: "Pelican Products"
     description: "Pelican Products is a global manufacturer of advanced lighting systems, rugged protector cases and shipping containers."
     uri: http://www.pelican.com/
-    tags: ["Cases", "Lighting"]
+    tags: ["Cases", "Lighting", "Infrastructure"]
 active-storage:
     title: "Active Storage"
     description: "High-performance high-availability RAID storage for media professionals."
     uri: http://www.activestorage.com/
-    tags: ["Storage"]
+    tags: ["Storage", "Videography"]
 allied-telesis:
     description: "Solutions for home, education and corporate computer networks of all sizes."
     uri: http://www.alliedtelesis.co.nz/
@@ -45,7 +45,7 @@ caldigit:
     title: "CalDigit"
     description: "Fast, reliable and secure storage solutions."
     uri: http://www.caldigit.com/
-    tags: ["Storage"]
+    tags: ["Storage", "Videography"]
 powermate:
     title: "PowerMate"
     description: "Accurate and portable energy measurement devices."
@@ -60,12 +60,12 @@ xrackpro:
     title: XRackPro
     description: "Equipment rack solutions for environments that require low noise levels."
     uri: http://www.xrackpro.com/
-    tags: ["Infrastructure"]
+    tags: ["Infrastructure", "Videography", "Audiography"]
 ledz:
     title: LEDZ
     description: LED lighting products designed for the entertainment, television, broadcast and motion picture industries.
     uri: http://www.led-z.com/
-    tags: ["Lighting"]
+    tags: ["Lighting", "Videography"]
 uptime-devices:
     description: High quality easily expandable environmental monitoring solutions.
     uri: http://www.uptimedevices.com
@@ -82,7 +82,7 @@ vmware:
 noga-holdit:
     description: Hghly reliable flexible arms that can be positioned to any angle, then locked.
     uri: http://www.holditarm.com/
-    tags: ["Videography", "Photography"]
+    tags: ["Videography", "Photography", "Audiography"]
 anton-bauer:
     description: Advanced power and battery systems for LED lighting solutions.
     uri: http://www.antonbauer.com/
@@ -104,7 +104,7 @@ hawk-woods:
     title: "Hawk-Woods"
     description: "Experience producer of innovative products for camera operators, sound recordists and lighting personnel, including batteries, chargers, power adaptors, cables and plugs."
     uri: http://www.hawkwoods.com/
-    tags: ["Videography", "Photography"]
+    tags: ["Videography", "Photography", "Audiography"]
 apc:
     title: APC
     description: "Leading manufacturer in server room equipment including UPSs and power conditioning devices."
