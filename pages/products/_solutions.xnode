@@ -23,7 +23,7 @@
 	<?r solutions.each do |solution| ?>
 	<li data-id="#{solution.name}" class="#{(solution[:tags] || []).join(' ')}">
 		<a href="#{solution.href}"><div class="title">#{solution.title}</div>
-			<img src="/solutions/_images/#{solution.name}.png" />
+			<img src="_images/#{solution.name}.png" />
 		</a>
 	</li>
 	<?r end ?>
