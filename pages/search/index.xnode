@@ -16,26 +16,29 @@
 	<?r
 		if query != ""
 			results = Xapian::Rack.find(request.env, query, {:options => Xapian::QueryParser::FLAG_WILDCARD})
-	?>
+	?>	
+		<?r if results.matches_estimated == 0 ?>
+			<p>Unfortunately your query for #{query.dump.to_html} did not match any pages. If you would like personalised assistance, please <contact_us /> and we'd be happy to help.</p>
+		<?r else ?>
+			<p>Approximately #{results.matches_estimated} results found out of #{search.database.doccount} total for #{query.dump.to_html}:</p>
 	
-	<p>Approximately #{results.matches_estimated} results found out of #{search.database.doccount} total for #{query.dump.to_html}:</p>
-	
-	<dl class="search-results">
-	<?r 
-			results.matches.each do |m|
-				$stderr.puts "Resource = #{m.document.data}\n----\n\n"
-				resource = YAML::load(m.document.data)
-				metadata = resource[:metadata]
-	?>
-		<dt><a href="#{resource[:name].to_html}">#{metadata[:title].to_html}</a> (#{m.percent}% relevance)</dt>
-		<?r if metadata[:description] ?>
-		<dd>#{metadata[:description].to_html}</dd>
-		<dd class="href">#{URI.parse("http://www.lucidsystems.org/") + resource[:name]}</dd>
+			<dl class="search-results">
+			<?r 
+					results.matches.each do |m|
+						$stderr.puts "Resource = #{m.document.data}\n----\n\n"
+						resource = YAML::load(m.document.data)
+						metadata = resource[:metadata]
+			?>
+				<dt><a href="#{resource[:name].to_html}">#{metadata[:title].to_html}</a> (#{m.percent}% relevance)</dt>
+				<?r if metadata[:description] ?>
+				<dd>#{metadata[:description].to_html}</dd>
+				<dd class="href">#{URI.parse("http://www.lucidsystems.org/") + resource[:name]}</dd>
+				<?r end ?>
+			<?r
+					end
+			?>
+			</dl>
 		<?r end ?>
-	<?r
-			end
-	?>
-	</dl>
 	<?r
 		end
 	?>
