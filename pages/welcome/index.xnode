@@ -1,5 +1,5 @@
 <page>
-	<search label="How may we help you today?" />
+	<header />
 	
 	<div class="quad tl">
 		<a href="/solutions" class="box"><h1>Solutions</h1></a>
