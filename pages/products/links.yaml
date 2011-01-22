@@ -109,7 +109,7 @@ apc:
     title: APC
     description: "Leading manufacturer in server room equipment including UPSs and power conditioning devices."
     uri: http://www.apc.com/
-    tags: ["Infratstructure"]
+    tags: ["Infrastructure"]
 aja:
     title: AJA Video Systems
     description: "A leading manufacturer of high-quality and cost-effective digital video interface, conversion and desktop solutions supporting the professional broadcast and post-production industries."
