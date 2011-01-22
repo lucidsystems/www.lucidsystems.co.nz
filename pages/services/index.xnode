@@ -5,7 +5,7 @@
 	
 	<ul>
 		<?r links.each do |link| ?>
-		<li>#{link.to_href} &mdash; #{link[:description]}</li>
+		<li>#{link.to_href}<?r if link[:description] ?> &mdash; #{link[:description]}<?r end ?></li>
 		<?r end ?>
 	</ul>
 </page>
