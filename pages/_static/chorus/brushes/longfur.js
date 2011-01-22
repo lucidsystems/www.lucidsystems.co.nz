@@ -19,7 +19,7 @@ Chorus.createBrush('LongFur', {
 		this.context.lineWidth = 1;
 		this.context.globalCompositeOperation = 'source-over';
 		
-		this.context.strokeStyle = "rgba(" + this.color + ", 0.1)";
+		this.context.strokeStyle = "rgba(" + this.color + ", 0.06)";
 		this.points.push([x, y]);
 
 		for (i = 0; i < this.points.length; i++)

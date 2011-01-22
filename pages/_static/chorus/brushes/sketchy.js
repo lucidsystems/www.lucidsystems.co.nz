@@ -25,7 +25,7 @@ Chorus.createBrush('Sketchy', {
 		this.context.lineWidth = 1;
 		this.context.globalCompositeOperation = 'source-over';
 
-		this.context.strokeStyle = "rgba(" + this.color + ", 0.7)";
+		this.context.strokeStyle = "rgba(" + this.color + ", 0.3)";
 		this.context.beginPath();
 		this.context.moveTo(this.prevx, this.prevy);
 		this.context.lineTo(x, y);
