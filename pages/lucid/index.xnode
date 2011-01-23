@@ -1,6 +1,8 @@
 <page>
-	<heading>Lucid Information Systems Ltd</heading>
-		
+	<heading>Company</heading>
+	
+	<p>Lucid Information Systems is a Christchurch, New Zealand based company specialising in the design, deployment and support of information systems.</p>
+	
 	<ul>
 		<?r links.each do |link| ?>
 		<li>#{link.to_href}<?r if link[:description] ?> &mdash; #{link[:description]}<?r end ?></li>
