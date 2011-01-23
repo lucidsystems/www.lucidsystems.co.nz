@@ -92,7 +92,7 @@ endian:
     uri: http://www.endian.com/
     tags: ["Network", "Firewall"]
 fortinet:
-    description: Enterprise firewall solutions including both hardware, software and support.
+    description: Enterprise firewall solutions including hardware, software and support.
     uri: http://www.fortinet.com/
     tags: ["Network", "Firewall"]
 paloalto-networks:
