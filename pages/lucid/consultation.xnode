@@ -1,0 +1,13 @@
+<page>
+	<heading>Lucid Consultation</heading>
+	
+	<table class="basic">
+		<thead>
+			<tr><th>Service</th><th>Cost</th></tr>
+		</thead>
+		<tbody>
+			<tr><td>General Consultation</td><td>$120 / hour</td></tr>
+		</tbody>
+	</table>
+</page>
+		

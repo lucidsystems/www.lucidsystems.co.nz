@@ -1,17 +1,19 @@
 welcome:
     order: 1
 products:
-    order: 10
+    order: 30
     header: true
 services:
-    order: 20
+    order: 60
     header: true
-solutions:
-    order: 8
+community:
+    order: 90
     header: true
+lucid:
+    header: true
+    title: "Company"
+    order: 120
 errors:
     display: false
 search:
-    display: false
-lucid:
     display: false
