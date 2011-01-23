@@ -2,10 +2,10 @@
 	<header />
 	
 	<div class="quad tl">
-		<a href="/community" class="box"><h1>Community</h1></a>
+		<a href="/products" class="box"><h1>Products</h1></a>
 	</div>
 	<div class="quad bl">
-		<a href="/products" class="box"><h1>Products</h1></a>
+		<a href="/community" class="box"><h1>Community</h1></a>
 	</div>
 	<div class="quad tr">
 		<a href="/services" class="box"><h1>Services</h1></a>
