@@ -1,12 +1,8 @@
-communicate:
-    description: "The Christchurch information technology community."
-dojo:
-    title: "Lucid Dojo"
-    description: "Learn about new technologies and tools."
 professional-lighting:
     description: "Hire lighting for your studio or on-site film or video project."
 storage:
     description: "Find out more about the turn key storage solutions and products we offer."
 backup:
     description: "Learn about our backup services and software."
-    
+infinity-systems:
+    description: "Taylor made computer systems designed for simplicity and functionality."
