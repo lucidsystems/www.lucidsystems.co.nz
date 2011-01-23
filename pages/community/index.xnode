@@ -1,0 +1,11 @@
+<page>
+	<heading>Community</heading>
+	
+	<p>Lucid Information Systems Ltd provides a wide variety of services.</p>
+	
+	<ul>
+		<?r links.each do |link| ?>
+		<li>#{link.to_href}<?r if link[:description] ?> &mdash; #{link[:description]}<?r end ?></li>
+		<?r end ?>
+	</ul>
+</page>
