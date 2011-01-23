@@ -2,8 +2,8 @@ litepanels:
     description: "LitePanels offer a wide range of LED lighting solutions for film and photography."
     uri: http://www.litepanels.co.nz/
     tags: ["Lighting", "Photography", "Videography"]
-led-tape:
-    title: "LED Tape"
+led-strips:
+    title: "LED Strips"
     description: "LED Tape is the modern way to add mood and style to your home, office or entertainment venue."
     uri: http://www.led-lighting.co.nz/
     tags: ["Lighting"]
@@ -51,7 +51,7 @@ powermate:
     description: "Accurate and portable energy measurement devices."
     uri: http://www.power-mate.com.au/
     tags: ["Monitoring"]
-thermo-fisher-scientific:
+thermofisher-scientific:
     title: "ThermoFisher Scientific"
     description: "Superior analytical instruments, laboratory equipment, software, services, consumables and reagents, including water loggers."
     uri: http://www.thermofisher.com/
@@ -115,7 +115,7 @@ aja:
     description: "A leading manufacturer of high-quality and cost-effective digital video interface, conversion and desktop solutions supporting the professional broadcast and post-production industries."
     uri: http://www.aja.com/
     tags: ["Videography"]
-it-watchdogs:
+itwatchdogs:
     title: ITWatchDogs
     description: "Manufactures climate and power monitoring systems that enable administrators to monitor server room conditions through a web browser with live video feed and current measurements of temperature, humidity, air flow, light, sound, power, water leakage and door position."
     uri: http://www.itwatchdogs.com/

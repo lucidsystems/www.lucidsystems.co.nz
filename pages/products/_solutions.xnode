@@ -22,8 +22,8 @@
 <ul class="solutions">
 	<?r solutions.each do |solution| ?>
 	<li data-id="#{solution.name}" class="#{(solution[:tags] || []).join(' ')}">
-		<a href="#{solution.href}"><div class="title">#{solution.title}</div>
-			<img src="_images/#{solution.name}.png" />
+		<a href="#{solution.href}" style="background-image: url('_images/#{solution.name}.jpg')" alt="#{solution.name}" title="#{solution[:description].to_html}">
+			<div class="title">#{solution.title}</div>
 		</a>
 	</li>
 	<?r end ?>
