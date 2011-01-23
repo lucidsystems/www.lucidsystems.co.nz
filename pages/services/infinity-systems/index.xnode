@@ -1,0 +1,76 @@
+<page>
+	<heading>Infinity Systems</heading>
+	
+	<p>Lucid offers a variety of integrated turn-key solutions, including service contracts to maintain and support the equipment and software.</p>
+	
+	<h2>What are the advantages of a Infinity System?</h2>
+	
+	<ul>
+		<li>You have the tools to completed your projects delivered ready to go.</li>
+		<li>No need to fuss over ordering software, hardware and installation.</li>
+		<li>Start projects quickly with with pre-configured systems.</li>
+		<li>System is designed and arrives fully tested and ready to go.</li>
+	</ul>
+	
+	<h2>Standard Configurations</h2>
+	
+	<h3>Infinity Workstation</h3>
+	
+	<p>A complete workstation solution designed around the <a href="http://www.apple.com/macpro/">Apple Mac Pro</a>. A number of turn-key solutions are available for:</p>
+	
+	<ul>
+		<li>Professional photography.</li>
+		<li>Business and accounting.</li>
+		<li>Videography and post production.</li>
+		<li>Audio engineering and mixing.</li>
+	</ul>
+	
+	<h3>Infinity Laptops</h3>
+	
+	<p>A completely portable solution designed around the <a href="http://www.apple.com/macbookpro/">Apple MacBook Pro</a>. A number of turn-key solutions are available for:</p>
+	
+	<ul>
+		<li>Professional photography.</li>
+		<li>Audio engineering and field recording.</li>
+		<li>Video editing and capture.</li>
+	</ul>
+	
+	<h3>Infinity Servers</h3>
+	
+	<p>A complete server solution designed around <a href="http://www.debian.org/">Linux</a>.</p>
+	
+	<ul>
+		<li>Shared storage and remote access (NFS, Samba/SMB, AFP, DropBox).</li>
+		<li>Onsite and offsite backup (LBackup, LSync, RSync).</li>
+		<li>Firewalls and internet proxies (Fortinet, Palo Alto).</li>
+		<li>Web applications and hosting (Apache, Ruby on Rails, Passenger).</li>
+		<li>Network management, access and monitoring (DNS, DHCP, OpenDirectory, SSH, VPN).</li>
+	</ul>
+	
+	<h2>Virtualisation</h2>
+	
+	<p>Lucid offers solutions for both workstation based virtualisation and server based virtualisation, to improve flexibility and reduce running costs.</p>
+	
+	<h3>Infinity Virtual Workstation</h3>
+	
+	<p>A complete workstation solution designed for running multiple desktop operating systems. Systems can be pre-installed as required:</p>
+	
+	<ul>
+		<li>Linux: Ubuntu Desktop, Debian, Red Hat</li>
+		<li>Windows: Windows 98, Windows 2000, Windows XP, Windows Vista, Windows 7</li>
+		<li>Mac OS X Server</li>
+		<li>OpenSolaris</li>
+		<li>BSD: OpenBSD, NetBSD</li>
+	</ul>
+	
+	<h3>Infinity Virtual Servers</h3>
+	
+	<p>A complete server solution designed for running multiple server grade operating systems, based on either VMware, Xen or KVM. Systems can be pre-installed as required:</p>
+	
+	<ul>
+		<li>Linux: Ubuntu Server, Debian, Red Hat</li>
+		<li>Windows: Windows 2003 Server, Windows 2008 Server</li>
+		<li>OpenSolaris</li>
+		<li>BSD: OpenBSD, NetBSD</li>
+	</ul>
+</page>
