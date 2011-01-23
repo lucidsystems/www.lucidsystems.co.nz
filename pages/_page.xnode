@@ -31,19 +31,7 @@
 	</head>
 
 	<body>
-		<div class="header">
-			<a style="display: block;" href="/" class="logo"></a>
-			
-			<div class="menu">
-				<?r links("/").each do |link|
-					next unless link[:header] == true
-				?>
-					#{link.to_href}
-				<?r end ?>
-				
-				<search />
-			</div>
-		</div>
+		<header />
 		
 		<navigation />
 		

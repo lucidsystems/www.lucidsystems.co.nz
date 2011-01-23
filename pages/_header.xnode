@@ -1,0 +1,15 @@
+<div class="header">
+	<a style="display: block;" href="/" class="logo"></a>
+	
+	<div class="menu">
+		<div class="links">
+			<?r links("/").each do |link|
+				next unless link[:header] == true
+			?>
+			#{link.to_href}
+			<?r end ?>
+		</div>
+		
+		<search label="Search" />
+	</div>
+</div>

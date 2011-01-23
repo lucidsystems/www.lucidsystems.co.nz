@@ -1,7 +1,7 @@
 <div class="search">
 	<form action="/search/index">
 		<div>
-			<label>#{attributes['label'] || "Search"}: 
+			<label>#{attributes['label'] ? attributes['label'] + ':' : ''}
 				<input type="search" name="query" value="#{(request[:query] || "").to_html}" /> 
 				<input type="image" src="/_static/search.png" alt="Search" />
 			</label>
