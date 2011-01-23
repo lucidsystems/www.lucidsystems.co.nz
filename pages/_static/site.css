@@ -83,15 +83,14 @@ h3, h4, h5, h6 {
 	left: 22%;
 	right: 0px;
 	bottom: 0px;
-	height: 40px;
+	height: 30px;
 	
 	padding: 0 0.5em 0;
 }
 
 .header .menu > div {
 	display: inline-block;
-	line-height: 40px;
-	padding-bottom: 0.2em;
+	line-height: 30px;
 }
 
 .header .menu .link {
@@ -100,18 +99,13 @@ h3, h4, h5, h6 {
 	text-decoration: none;
 	display: inline-block;
 	
-	min-width: 120px;
-	
-	border-top-left-radius: 0.8em;
-	border-top-right-radius: 0.8em;
-	
-	color: white;
-	
-	background-color: rgb(39,0,156);
+	min-width: 100px;
+	margin-bottom: 8px;
 }
 
 .header .menu .link:hover {
-	background-color: rgb(60,20,200);
+	margin-bottom: 0;
+	border-bottom: 8px solid rgb(60,20,200);
 }
 
 .header .menu .search {
