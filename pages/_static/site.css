@@ -63,11 +63,12 @@ h3, h4, h5, h6 {
 
 .header {
 	position: relative;
-	height: 100px;
+	height: 80px;
 	
+	background-color: rgb(226, 226, 226);
 	background: url("/_static/gd2.png") repeat-x;
 	
-	border-bottom: 2px solid #333;
+	border-bottom: 2px solid rgb(39,0,156);
 }
 
 .header .logo {
@@ -79,52 +80,56 @@ h3, h4, h5, h6 {
 .header .menu {
 	position: absolute;
 	
-	left: 20%;
+	left: 22%;
 	right: 0px;
 	bottom: 0px;
-	top: 18px;
+	height: 40px;
 	
-	padding-right: 2em;
+	padding: 0 0.5em 0;
+}
+
+.header .menu > div {
+	display: inline-block;
+	line-height: 40px;
 	padding-bottom: 0.2em;
 }
 
 .header .menu .link {
-	text-decoration: none;
-	
-	display: block;
-	float: left;
-	
-	margin: 1em;
-	
-	-moz-border-radius: 8px;
-	-webkit-border-radius: 8px;
-	border-radius: 8px;
-	background-color: #f0f0f0;
-	
-	padding: 0.5em;
-	padding-top: 0.8em;
 	text-align: center;
 	
-	-moz-box-shadow: 2px 2px 5px #ccc;
-	-webkit-box-shadow: 2px 2px 5px #ccc;
-	box-shadow: 2px 2px 5px #ccc;
+	text-decoration: none;
+	display: inline-block;
+	
+	min-width: 120px;
+	
+	border-top-left-radius: 0.8em;
+	border-top-right-radius: 0.8em;
+	
+	color: white;
+	
+	background-color: rgb(39,0,156);
 }
 
 .header .menu .link:hover {
-	background-color: #fff;
+	background-color: rgb(60,20,200);
 }
 
 .header .menu .search {
+	position: relative;
 	float: right;
+	
 	width: 20em;
+	
+	text-align: right;
+}
+
+.header .menu .search input[type=image] {
+	vertical-align: -25%;
+	padding: 0 0.5em 0;
 }
 
 .header .menu .search input[type=search] {
-	width: 60%;
-}
-
-.search form * {
-	vertical-align: middle;
+	width: 50%;
 }
 
 .content {
@@ -235,7 +240,7 @@ table.basic tbody tr:hover td {
 
 /* Search Results */
 
-.search {
+.content .search {
 	margin: 1em;
 	
 	-moz-border-radius: 8px;
@@ -251,7 +256,7 @@ table.basic tbody tr:hover td {
 	box-shadow: 2px 2px 5px #ccc;
 }
 
-.search input[type=search] {
+.content .search input[type=search] {
 	width: 40%;
 	margin: 0 1em 0;
 }
@@ -272,8 +277,9 @@ dl.search-results dd.href {
 
 /* Page Navigation Bar */
 .navigation {
-	height: 28px;
 	position: relative;
+	
+	height: 2.2em;
 }
 
 .navigation a {
@@ -287,13 +293,15 @@ dl.search-results dd.href {
 .navigation ul, .navigation li {
 	list-style: none;
 	float:left;
-	line-height: 25px;
+	
+	line-height: 40px;
+	padding-bottom: 0.2em;
 	margin-right: 11px;
 }
 
 .navigation ul {
 	padding: 0;
-	margin: 2px 0 2px;
+	margin: 0;
 }
 
 /* Photo Gallery */
