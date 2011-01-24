@@ -1,0 +1,30 @@
+<page>
+	<heading>Contact Details</heading>
+	
+	<dl class="basic">
+		<dt>Email Address</dt>
+		<dd>All Enquiries: <a href="mailto:lucid@lucidsystems.org">lucid@lucidsystems.org</a></dd>
+		
+		<dt>Postal Address</dt>
+		<dd>Lucid Information Systems</dd>
+		<dd>P.O. Box 18624</dd>
+		<dd>Christchurch 8641</dd>
+		<dd>New Zealand</dd>
+		
+		<dt>Shipping Address</dt>
+		<dd>Lucid Information Systems</dd>
+		<dd>Suite 31, Heritage Hotel</dd>
+		<dd>28 Cathedral Square</dd>
+		<dd>Christchurch 8011</dd>
+		<dd>New Zealand</dd>
+		
+		<dt>Central Office Phone Number</dt>
+		<dd>All Enquiries: <a href="callto:64-3-3666638">+64 3 366 6638</a></dd>
+		
+		<dt>After Hours Emergency Contacts</dt>
+		<dd>Henri's Pager: <a href="callto:64-8-6507685">+64 8 650 7685</a></dd>
+		<dd>Samuel's Mobile: <a href="callto:64-21-2726835">+64 21 2726835</a></dd>
+	</dl>
+	
+	<p>You may not contact us for promotional/marketing purposes or harvest these contact details into a database without our prior permission.</p>
+</page>
