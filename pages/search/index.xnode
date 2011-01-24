@@ -25,7 +25,6 @@
 			<dl class="search-results">
 			<?r 
 					results.matches.each do |m|
-						$stderr.puts "Resource = #{m.document.data}\n----\n\n"
 						resource = YAML::load(m.document.data)
 						metadata = resource[:metadata]
 			?>
