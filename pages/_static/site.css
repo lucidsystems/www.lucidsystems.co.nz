@@ -374,3 +374,19 @@ dl.search-results dd.href {
 	
 	margin: 0.5em;
 }
+
+/* Contact Details Definition List */
+
+dl.basic {
+	
+}
+
+dl.basic dt {
+	font-size: 1.2em;
+	margin: 1.0em 0 0.5em;
+	border-bottom: 1px solid #ccf;
+}
+
+dl.basic dd {
+	
+}
