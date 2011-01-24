@@ -12,10 +12,10 @@ def on_index(path, request)
 			message.puts params["message"]
 			
 			mail = Mail.new do
-				from params["from"] || "anonymous@lucidsystems.org"
+				from params["from"] || "anonymous@lucidsystems.co.nz"
 				
 				to 'lucid@lucidsystems.org'
-				subject "www.lucidsystems.org: #{params["subject"]}"
+				subject "www.lucidsystems.co.nz: #{params["subject"]}"
 				body message.string
 			end
 
