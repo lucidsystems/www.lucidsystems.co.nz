@@ -127,7 +127,7 @@ h3, h4, h5, h6 {
 }
 
 .content {
-	padding: 1em 4em 1em;
+	padding: 0em 4em 4em;
 }
 
 /* Forms v2.2 */
@@ -342,10 +342,6 @@ dl.search-results dd.href {
 	
 	background-color: white;
 	background-color: rgba(255, 255, 255, 0.95);
-}
-
-.content {
-	padding-bottom: 3em;
 }
 
 /* Contact Popup */
