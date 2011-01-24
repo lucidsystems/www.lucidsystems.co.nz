@@ -1,1 +1,1 @@
-<a href="/lucid/contact-us" onclick="javascript:resetContactPopup(true); return false;">#{content == "" ? "contact us" : content}</a>
+<a class="link" href="/lucid/contact-us" onclick="javascript:resetContactPopup(true); return false;">#{content == "" ? "contact us" : content}</a>
