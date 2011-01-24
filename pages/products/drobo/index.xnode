@@ -1,0 +1,17 @@
+<page>
+	<heading>Data Robotics Drobo</heading>
+	
+	<p>The Drobo is a fantastic storage product for small to medium sized businesses.</p>
+	
+	<ul>
+		<li>Simple, scalable and reliable.</li>
+		<li>Storage solutions for virtualised infratstructure.</li>
+		<li>Offsite backup synchronisation features.</li>
+	</ul>
+	
+	<p>Please visit <a href="http://www.drobo.co.nz/">www.drobo.co.nz</a> for more details or to buy.</p>
+	
+	<div class="gallery">
+		<img src="DroboPro.jpg" alt="There's a Drobo for Everyone"/>
+	</div>
+</page>
