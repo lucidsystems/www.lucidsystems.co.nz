@@ -11,12 +11,21 @@
 		<dd>Christchurch 8641</dd>
 		<dd>New Zealand</dd>
 		
-		<dt>Shipping Address</dt>
+		<dt>Central Office</dt>
 		<dd>Lucid Information Systems</dd>
-		<dd>Suite 31, Heritage Hotel</dd>
 		<dd>28 Cathedral Square</dd>
 		<dd>Christchurch 8011</dd>
 		<dd>New Zealand</dd>
+		<dd><small><a href="http://maps.google.co.nz/?q=28A+Cathedral+Square,+Christchurch+8011,+New+Zealand">Locate on Google Maps</a></small></dd>
+		
+		<?r if request[:shipping] ?>
+		<dt>Shipping Address</dt>
+		<dd>Lucid Information Systems</dd>
+		<dd>28 Cathedral Square</dd>
+		<dd>Heritage Hotel Reception Desk</dd>
+		<dd>Christchurch 8011</dd>
+		<dd>New Zealand</dd>
+		<?r end ?>
 		
 		<dt>Central Office Phone Number</dt>
 		<dd>All Enquiries: <a href="tel:64-3-3666638">+64 3 366 6638</a></dd>
