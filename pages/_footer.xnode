@@ -12,14 +12,14 @@
 	<a class="close" href="#" onclick="javascript:$('#contact-popup').slideUp(); return false;"></a>
 	
 	<div class="main">
-		<p>Please fill out the following form to send us a message. If you want a response, please include a valid "Reply To:" email address.</p>
+		<p>Flick us a message, or <contact_us>email us directly</contact_us>. Alternatively, contact us via <a href="/lucid/contact-details">post or phone</a>. We would love to hear from you!</p>
 
 		<form action="/lucid/contact-us/send" method="post" class="basic central_form" id="contact">
 			<fieldset>
 				<dl>
 					<dt><label for="subject">Subject:</label></dt>
 					<dd><input type="text" name="subject" /></dd>
-					<dt><label for="from">Reply To:</label></dt>
+					<dt><label for="from">Reply To (your email address, optional):</label></dt>
 					<dd><input type="text" name="from" /></dd>
 					<dt><label for="message">Message:</label></dt>
 					<dd><textarea name="message"></textarea></dd>
