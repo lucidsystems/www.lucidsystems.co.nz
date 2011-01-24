@@ -55,7 +55,9 @@ use Xapian::Rack::Search, {
 use Utopia::Middleware::Redirector, {
 	:strings => {
 		'/' => '/welcome/index',
-		'/utopia' => 'http://www.oriontransfer.co.nz/software/utopia/demo'
+		'/links/drobo/reseller' => '/products/drobo',
+		'/links/backblaze' => 'http://www.backblaze.com/partner/af0692',
+		'/links/spideroak' => 'https://spideroak.com/download/promo/lucidsystems',
 	},
 	:errors => {
 		404 => "/errors/file-not-found"
