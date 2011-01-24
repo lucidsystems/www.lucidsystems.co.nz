@@ -9,9 +9,8 @@ services:
 community:
     order: 90
     header: true
-lucid:
+company:
     header: true
-    title: "Company"
     order: 120
 errors:
     display: false
