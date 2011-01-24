@@ -282,13 +282,14 @@ dl.search-results dd.href {
 
 .navigation ul.trail {
 	padding-left: 22px;
+	font-size: 0.8em;
 }
 
 .navigation ul, .navigation li {
 	list-style: none;
 	float:left;
 	
-	line-height: 40px;
+	line-height: 30px;
 	padding-bottom: 0.2em;
 	margin-right: 11px;
 }
