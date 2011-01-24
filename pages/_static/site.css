@@ -358,9 +358,7 @@ dl.search-results dd.href {
 	color: white;
 	
 	background-color: black;
-	background-color: rgba(0, 0, 0, 0.8);
-	
-	font-size: 80%;
+	background-color: rgba(0, 0, 0, 0.9);
 }
 
 #contact-popup a.close {
@@ -373,6 +371,14 @@ dl.search-results dd.href {
 	height: 32px;
 	
 	margin: 0.5em;
+}
+
+#contact-popup a {
+	color: #aaf;
+}
+
+#contact-popup a:hover {
+	color: #ccf;
 }
 
 /* Contact Details Definition List */
