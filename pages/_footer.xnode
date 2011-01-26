@@ -12,7 +12,7 @@
 	<a class="close" href="#" onclick="javascript:$('#contact-popup').slideUp(); return false;"></a>
 	
 	<div class="main">
-		<p>Flick us a message, or <contact_us>email us directly</contact_us>. Alternatively, contact us via <a href="/company/contact-details">post or phone</a>. We would love to hear from you!</p>
+		<p>Flick us a message, or <a href="mailto:lucid@lucidsystems.org">email us directly</a>. Alternatively, contact us via <a href="/company/contact-details">post or phone</a>. We would love to hear from you!</p>
 
 		<form action="/company/contact-us/send" method="post" class="basic central_form" id="contact">
 			<fieldset>

@@ -7,7 +7,7 @@
 		<fieldset>
 			<dl>
 				<dt><label for="subject">Subject:</label></dt>
-				<dd><input type="text" name="subject" /></dd>
+				<dd><input type="text" name="subject" value="#{(request[:subject] || "").to_html}" /></dd>
 				<dt><label for="from">Reply To:</label></dt>
 				<dd><input type="text" name="from" /></dd>
 				<dt><label for="message">Message:</label></dt>

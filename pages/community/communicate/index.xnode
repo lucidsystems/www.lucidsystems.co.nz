@@ -17,8 +17,8 @@
 	<h2>Prizes</h2>
 	
 	<p>There are some great prizes lined up for the first meeting of 2011.
-		However, you must <contact_us>register</contact_us> and attend to be
-		into win.</p>
+		However, you must <contact_us subject="Communicate Registration">register</contact_us>
+		and attend to be into win.</p>
 	
 	<gallery path="_prizes" tag="photo_thumbnail" process="photo_thumbnail,large" />
 	
