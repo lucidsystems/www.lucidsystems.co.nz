@@ -1,0 +1,38 @@
+<page>
+	<course>Computer Science Concepts</course>
+	
+	<h2>Course Outline</h2>
+	
+	<p>This two day course is designed for teachers who will be covering the following achievement standards:</p>
+	
+	<ul>
+		<li><a href="http://www.nzqa.govt.nz/nqfdocs/ncea-resource/achievements/2011/as91074.pdf">AS91074</a>: Demonstrate understanding of basic concepts from computer science</li>
+		<li><a href="http://www.nzqa.govt.nz/nqfdocs/ncea-resource/achievements/2011/as91075.pdf">AS91075</a>: Construct an algorithmic structure for a basic task</li>
+		<li><a href="http://www.nzqa.govt.nz/nqfdocs/ncea-resource/achievements/2011/as91076.pdf">AS91076</a>: Construct a basic computer program for a specified task</li>
+	</ul>
+	
+	<h2>Pre-requisites</h2>
+	
+	<p>Basic knowledge of programming is recommended, but not required. Preferred languages include Ruby or Python. If you have no programming experience, we recommend you take either <a href="a-gentle-introduction-to-ruby">A Gentle Introduction to Ruby</a> or <a href="a-gentle-introduction-to-python">A Gentle Introduction to Python</a>.</p>
+	<p>Your own laptop preferably running either Linux or Mac OS X. Windows is okay too, but generally more complex to setup for programming.</p>
+	
+	<h2>Course Details</h2>
+	
+	<h3>Day 1: Introduction to Computer Science</h3>
+	
+	<p>We will be covering the key concepts that define Computer Science [AS91074]. This includes reviewing basic concepts in problem solving, logic and mathematics. The concept of an algorithm will be discussed and we will be looking at how algorithms are expressed systematically through the use of programming languages.</p>
+	
+	<p>We will be reviewing basic usability issues [AS91074] including a historic review of human-computer interaction advancements with an emphasis on early programming languages and computer hardware through to modern operating systems and applications. We will be reviewing modern advancements in mobile technology including topics from augmented reality.</p>
+	
+	<h3>Day 2: Algorithms and Data Structures</h3>
+	
+	<p>We will be reviewing basic sorting algorithms from a high level [AS91075], including both recursive and iterative forms. We will look at the computational complexity and running time of various different algorithms and discuss the related concepts, including the Big-O notation.</p>
+	
+	<p>We will then implement a specific algorithm for sorting and counting words [AS91076].</p>
+	
+	<p>As time permits, we will review hash tables, another interesting data structure, and the associated algorithms. Remaining time will also be used for Q&amp;A.</p>
+	
+	<h2>Resources</h2>
+	
+	<p>Information covered in the course will be written up and provided online to attendees of the course. All source code and associated documentation will be made available for use in your own classes.</p>
+</page>

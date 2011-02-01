@@ -1,0 +1,35 @@
+<page>
+	<course>A Gentle Introduction to the Shell</course>
+	
+	<h2>Course Outline</h2>
+
+	<p>This one day course is designed for anyone interested in the command line and how to use it.</p>
+
+	<ul>
+		<li>What is a shell and why would we want to use it?</li>
+		<li>The UNIX philosophy: keeping thing simple.</li>
+		<li>Introduction to BASH and some useful commands.</li>
+		<li>Creating and automating processes using shell scripts and <code>cron</code>.</li>
+	</ul>
+
+	<h2>Pre-requisites</h2>
+
+	<p>Basic knowledge of how to use a computer and text editor useful, but not required.</p>
+	<p>Your own laptop preferably running either Linux or Mac OS X. We can supply free Ubuntu CDs on the day.</p>
+
+	<h2>Course Details</h2>
+
+	<h3>Day 1: What is a shell?</h3>
+
+	<p>We will firstly discuss why the shell exists and why it is useful. We will be discussing the UNIX philosophy and how it relates to shell scripting.</p>
+	
+	<p>We will be looking at how to use the BASH shell including many of the basic commands for file and directory access and manipulation. We will also review some more advanced commands relating to editing files, job control and process management.</p>
+	
+	<p>We will cover some of the more complex commands such as <code>awk</code>, <code>grep</code>, <code>sed</code>, <code>find</code> and <code>xargs</code>.</p>
+	
+	<p>Finally we will discuss how to automate tasks by creating shell scripts, including setting up tasks that run periodically using <code>cron</code>.</p>
+
+	<h2>Resources</h2>
+
+	<p>Information covered in the course will be written up and provided online to attendees of the course. All source code and associated documentation will be made available.</p>
+</page>

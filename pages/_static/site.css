@@ -227,8 +227,7 @@ table.basic tbody td {
 
 table.basic tbody th {
 	text-align: left;
-	text-decoration: underline;
-	padding-top: 12px;
+	padding-top: 2.0em;
 }
 
 table.basic tbody tr:hover td {

@@ -1,0 +1,40 @@
+<page>
+	<course>A Gentle Introduction to Ruby</course>
+	
+	<h2>Course Outline</h2>
+	
+	<p>This two day course is designed for anyone interested in learning to program using Ruby.</p>
+	
+	<ul>
+		<li>What is Ruby?</li>
+		<li>Basic syntax and statements.</li>
+		<li>Data types and data structures.</li>
+		<li>Code organisation and modules.</li>
+		<li>Creating your own command-line based game.</li>
+	</ul>
+	
+	<h2>Pre-requisites</h2>
+	
+	<p>Basic knowledge of how to use a computer and text editor useful, but not required.</p>
+	<p>Your own laptop preferably running either Linux or Mac OS X. We can supply free Ubuntu CDs on the day.</p>
+	
+	<h2>Course Details</h2>
+	
+	<h3>Day 1: What is Ruby?</h3>
+	
+	<p>We will be covering the basic setup and installation of Ruby on everyone's computers, including the use of the <code>gem</code> command.</p>
+	
+	<p>We will focus on creating several basic scripts including processing command line arguments, reading data from files and standard input and printing out information. As part of this, we will review basic Ruby data types such as numbers, strings, arrays and hashes.</p>
+	
+	<p>Finally, as time permits, we will review the organisation of source code, including how to use functions, classes and modules to keep source code organised.</p>
+	
+	<h3>Day 2: Robot Finds Kitten</h3>
+	
+	<p>We will pick up from the previous day with the goal of writing a moderately complex program. We will be using <a href="http://datamapper.org/">DataMapper</a> to create local SQLite databases, for use in a <a href="http://en.wikipedia.org/wiki/MUD">MUD</a> style adventure game.</p>
+	
+	<p>During this day, the goal is to provide people with an enjoyable goal, and an environment where they can ask questions and move at their own pace, using the knowledge taught the previous day.</p>
+	
+	<h2>Resources</h2>
+	
+	<p>Information covered in the course will be written up and provided online to attendees of the course. All source code and associated documentation will be made available.</p>
+</page>
