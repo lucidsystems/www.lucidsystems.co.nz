@@ -25,11 +25,11 @@ img {
 }
 
 a {
-	color: #33a;
+	color: #33c;
 }
 
 a:visited {
-	color: #33a;
+	color: #33c;
 }
 
 a:hover {
@@ -209,11 +209,8 @@ table.basic {
 }
 
 table.basic thead th {
-	font-family: "Lucida Grande", sans-serif;
-	font-weight: normal;
-	font-size: 13pt;
-
-	color: #003399;
+	font-size: 110%;
+	color: #039;
 	border-bottom: 2px solid #6678b2;
 	padding: 10px 8px;
 }
@@ -222,7 +219,7 @@ table.basic tbody th,
 table.basic tbody td {
 	border: none;
 	padding: 9px 8px 0px 8px;
-	color: #666699
+	color: #335
 }
 
 table.basic tbody th {
@@ -231,7 +228,7 @@ table.basic tbody th {
 }
 
 table.basic tbody tr:hover td {
-	text-shadow: #ccc 1px 1px 4px;
+	text-shadow: #ddd 1px 1px 4px;
 }
 
 /* Search Results */

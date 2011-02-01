@@ -23,8 +23,8 @@
 			<tr><td><a href="courses/a-gentle-introduction-to-python">A Gentle Introduction to Python</a></td><td>Samuel Williams</td><td>19th, 20th April 2011</td><td>6</td><td>$800</td></tr>
 			<tr><td><a href="courses/a-gentle-introduction-to-ruby">A Gentle Introduction to Ruby</a></td><td>Samuel Williams</td><td>21th, 22th April 2011</td><td>6</td><td>$800</td></tr>
 			<tr><th colspan="5">NCEA Teacher Courses</th></tr>
-			<tr><td>NCEA Level 1: <a href="courses/computer-science-concepts">Computer Science Concepts</a></td><td>Samuel Williams</td><td>19th, 20th February 2011</td><td>5</td><td>$800</td></tr>
-			<tr><td>NCEA Level 1: <a href="courses/computer-science-concepts">Computer Science Concepts</a></td><td>Samuel Williams</td><td>25th, 26th April 2011</td><td>6</td><td>$800</td></tr>
+			<tr><td><a href="courses/computer-science-concepts">Computer Science Concepts</a> (NCEA Level 1)</td><td>Samuel Williams</td><td>19th, 20th February 2011</td><td>5</td><td>$800</td></tr>
+			<tr><td><a href="courses/computer-science-concepts">Computer Science Concepts</a> (NCEA Level 1)</td><td>Samuel Williams</td><td>25th, 26th April 2011</td><td>6</td><td>$800</td></tr>
 		</tbody>
 	</table>
 	
