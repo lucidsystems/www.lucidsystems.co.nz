@@ -112,6 +112,8 @@ h3, h4, h5, h6 {
 }
 
 .header .menu .search {
+	z-index: 2;
+	
 	position: relative;
 	float: right;
 	
