@@ -1,7 +1,7 @@
 <page>
 	<heading>Services</heading>
 	
-	<p>We provides a wide variety of services.</p>
+	<p>We provide a wide variety of services.</p>
 	
 	<ul>
 		<?r links.each do |link| ?>
