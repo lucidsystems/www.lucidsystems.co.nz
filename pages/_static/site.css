@@ -394,3 +394,22 @@ dl.basic dt {
 dl.basic dd {
 	
 }
+
+/* Message Boxes */
+
+div.notice {
+	background-image: url("/_static/SadElephant.png");
+	background-repeat: no-repeat;
+	background-position: 10px 50%;
+	
+	border: 0.2em solid #eef;
+	
+	padding: 1em;
+	padding-left: 120px;
+	background-color: #fafaff;
+	
+	margin: 5em;
+	text-align: center;
+	
+	border-radius: 1em;
+}

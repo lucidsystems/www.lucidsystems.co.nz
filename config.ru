@@ -4,7 +4,7 @@ UTOPIA_ENV = (ENV['UTOPIA_ENV'] || ENV['RACK_ENV'] || :development).to_sym
 $LOAD_PATH << File.join(File.dirname(__FILE__), "lib")
 
 # It is recommended that you always explicity specify the version of the gem you are using.
-gem 'utopia', "0.9.43"
+gem 'utopia', "0.9.46"
 require 'utopia/middleware/all'
 require 'utopia/tags/all'
 
@@ -48,8 +48,9 @@ use Xapian::Rack::Search, {
 		'http://www.led-lighting.co.nz/',
 		'http://www.litepanels.co.nz/',
 		'http://www.drobo.co.nz/',
+		'http://www.lbackup.org/',
 	],
-	:domains => ["www.led-lighing.co.nz", "www.litepanels.co.nz", "www.drobo.co.nz"]
+	:domains => ["www.led-lighing.co.nz", "www.litepanels.co.nz", "www.drobo.co.nz", "www.lbackup.org"]
 }
 
 use Utopia::Middleware::Redirector, {
@@ -58,6 +59,30 @@ use Utopia::Middleware::Redirector, {
 		'/links/drobo/reseller' => '/products/drobo',
 		'/links/backblaze' => 'http://www.backblaze.com/partner/af0692',
 		'/links/spideroak' => 'https://spideroak.com/download/promo/lucidsystems',
+		
+		# LBackup
+		'/tools/lbackup/download' => '/projects/lbackup',
+		'/tools/lbackup' => '/projects/lbackup',
+		'/lbackup' => '/projects/lbackup',
+		'/download/utilities/LBackup.zip' => 'http://www.lbackup.org/download/LBackup.zip',
+		
+		# AddItemToDock
+		'/luciddocktools.html' => '/projects/additemtodock',
+		'/download/utilities/additemtodock.dmg.zip' => '/projects/additemtodock/additemtodock.zip',
+		'/download/utilities/additemtodock.dmg' => '/projects/additemtodock/additemtodock.zip',
+		
+		# PrintingWorks
+		'/printingworks/printersetup/index' => '/projects/printing-works',
+		'/printingworks/index' => '/projects/printing-works',
+		'/download/utilities/PrinterSetup.zip' => 'projects/printing-works',
+		'/printingworks/printingmanager/index' => 'projects/printing-works',
+		'/lucidprintersetup.html' => '/projects/printing-works',
+		
+		# Contact Details
+		'/lucidcontact.php' => '/company/contact-details',
+		
+		# Solutions
+		'/lucidsolprebuilt.html' => '/services/infinity-systems/',
 	},
 	:errors => {
 		404 => "/errors/file-not-found"

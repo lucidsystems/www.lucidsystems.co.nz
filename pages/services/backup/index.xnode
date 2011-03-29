@@ -22,8 +22,8 @@
 	<p>Lucid provides several free and open source software solutions for backup.</p>
 	
 	<ul>
-		<li><a href="http://www.lbackup.org/">LBackup</a> &mdash; LBackup is a backup wrapper for rsync, aimed at system administrators who require reliable backups.</li>
+		<li><a href="/projects/lbackup">LBackup</a> &mdash; LBackup is a backup wrapper for rsync, aimed at system administrators who require reliable backups.</li>
 		
-		<li><a href="http://www.oriontransfer.co.nz/software/lsync">LSync</a> &mdash; LSync is a tool that can be used to perform a wide variety of backup and synchronization tasks.</li>
+		<li><a href="/projects/lsync">LSync</a> &mdash; LSync is a tool that can be used to perform a wide variety of backup and synchronization tasks.</li>
 	</ul>
 </page>

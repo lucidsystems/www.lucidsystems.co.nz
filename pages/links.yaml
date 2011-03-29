@@ -16,3 +16,5 @@ errors:
     display: false
 search:
     display: false
+projects:
+    order: 200
