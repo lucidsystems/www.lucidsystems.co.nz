@@ -26,11 +26,12 @@ def on_index(path, request)
 
 			mail.deliver!
 
-			if params["from"]
-				return redirect("success")
-			else
-				return redirect("success-no-reply")
-			end
+			# Allow AJAX requests from different domains.
+			headers = {
+				"Access-Control-Allow-Origin" => "*"
+			}
+			
+			return redirect(params["from"] ? "success" : "success-no-reply").update({:headers => headers})
 		end
 	end
 	
