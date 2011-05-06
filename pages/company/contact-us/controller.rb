@@ -1,6 +1,17 @@
 
+ACCESS_CONTROLS = {
+	"Access-Control-Allow-Origin" => "*",
+	"Access-Control-Allow-Headers" => "X-Requested-With",
+	"Access-Control-Max-Age" => "60"
+}
+
 def on_index(path, request)
 	params = request.params
+
+	if request.options?
+		# Allow AJAX requests from different domains.
+		return :status => 200, :headers => ACCESS_CONTROLS
+	end
 
 	if request.post?
 		params["from"] = nil if params["from"].length == 0
@@ -26,12 +37,12 @@ def on_index(path, request)
 
 			mail.deliver!
 
-			# Allow AJAX requests from different domains.
-			headers = {
-				"Access-Control-Allow-Origin" => "*"
-			}
-			
-			return redirect(params["from"] ? "success" : "success-no-reply").update({:headers => headers})
+			if request.xhr?
+				# You also need to provide access control headers here.
+				return :status => :success, :headers => ACCESS_CONTROLS
+			else
+				return redirect(params["from"] ? "success" : "success-no-reply")
+			end
 		end
 	end
 	
