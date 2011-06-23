@@ -59,6 +59,9 @@ use Utopia::Middleware::Redirector, {
 		'/links/backblaze' => 'http://www.backblaze.com/partner/af0692',
 		'/links/spideroak' => 'https://spideroak.com/download/promo/lucidsystems',
 		
+		# Contact Page
+		'/lucidcontact.php' => '/company/contact-us',
+		
 		# LBackup
 		'/tools/lbackup/download' => '/projects/lbackup',
 		'/tools/lbackup' => '/projects/lbackup',
@@ -71,10 +74,8 @@ use Utopia::Middleware::Redirector, {
 		'/download/utilities/additemtodock.dmg' => '/projects/additemtodock/additemtodock.zip',
 		
 		# PrintingWorks
-		'/printingworks/printersetup/index' => '/projects/printing-works',
-		'/printingworks/index' => '/projects/printing-works',
-		'/download/utilities/PrinterSetup.zip' => 'projects/printing-works',
-		'/printingworks/printingmanager/index' => 'projects/printing-works',
+		'/download/utilities/PrinterSetup.zip' => '/projects/printing-works',
+		'/printingworks/printingmanager/index' => '/projects/printing-works',
 		'/lucidprintersetup.html' => '/projects/printing-works',
 		
 		# Contact Details
@@ -83,6 +84,13 @@ use Utopia::Middleware::Redirector, {
 		# Solutions
 		'/lucidsolprebuilt.html' => '/services/infinity-systems/',
 	},
+	:patterns => [
+		# Variations of the old printing works page URL
+		[Regexp.starts_with('/printingworks'), '/projects/printing-works'],
+		
+		# Variations of the /contact URL, details provided by Henri
+		[Regexp.starts_with('/contact'), '/company/contact-details'],
+	],
 	:errors => {
 		404 => "/errors/file-not-found"
 	}
