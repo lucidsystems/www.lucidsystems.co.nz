@@ -4,13 +4,10 @@
 	<p>LBackup is a backup system for system administrators who require reliable backups with minimum fuss.</p>
 	
 	<h2>Resources</h2>
-	
-	<div class="notice">
-		<p>The project website <a href="http://www.lbackup.org">lbackup.org</a> is currently experiencing downtime due to the Christchurch Earthquake and will be returning soon. We apologize for any inconvenience.</p>
-	</div>
-	
+		
 	<ul>
 		<li><a href="http://www.lbackup.org">Project Website</a></li>
-		<li><a href="https://github.com/henri/lbackup-core">Source Code</a></li>
+		<li><a href="https://www.lbackup.org/source">Source Code</a></li>
 	</ul>
+	
 </page>
