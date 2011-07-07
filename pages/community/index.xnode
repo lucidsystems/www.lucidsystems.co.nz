@@ -1,7 +1,7 @@
 <page>
 	<heading>Community</heading>
 	
-	<p>Lucid Information Systems Ltd provides a wide variety of services.</p>
+	<p>We participate in a wide variety of community oriented events and sponsor the development of many open source solutions.</p>
 	
 	<ul>
 		<?r links.each do |link| ?>
