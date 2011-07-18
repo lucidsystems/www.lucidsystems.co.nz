@@ -120,3 +120,7 @@ itwatchdogs:
     description: "Manufactures climate and power monitoring systems that enable administrators to monitor server room conditions through a web browser with live video feed and current measurements of temperature, humidity, air flow, light, sound, power, water leakage and door position."
     uri: http://www.itwatchdogs.com/
     tags: ["Monitoring"]
+gopro:
+    title: GoPro
+    description: "The world's best selling wearable HD cameras for sports."
+    tags: ["Videography"]

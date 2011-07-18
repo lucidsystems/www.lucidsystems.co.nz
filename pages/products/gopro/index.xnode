@@ -1,0 +1,140 @@
+<page>
+	<heading>GoPro: HD Hero</heading>
+	
+	<p>We stocks and sells all GoPro cameras and accessories. For more information please visit <a href="http://gopro.com/">GoPro.com</a>. Please <contact_us /> to purchase.</p>
+	
+	<gallery path="_photos" tag="photo_thumbnail" process="photo_thumbnail,large" />
+	
+	<h2>Price List</h2>
+	
+	<table class="basic">
+		<thead>
+			<tr>
+				<td width="70%">Camera</td>
+				<td>Price (incl GST)</td>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>170 Wide Angle HD Motorsport/ Helmet</td>
+				<td>$499</td>
+			</tr>
+			<tr>
+				<td>170 Wide Angle HD Surf</td>
+				<td>$479</td>
+			</tr>
+			<tr>
+				<td>170 Wide Angle HD Naked</td>
+				<td>$469</td>
+			</tr>
+			<tr>
+				<td>170 Wide Angle HD 960</td>
+				<td>$349</td>
+			</tr>
+		</tbody>
+	</table>
+	
+	<table class="basic">
+		<thead>
+			<tr>
+				<td width="70%">Accessories</td>
+				<td>Price (incl GST)</td>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>HD Replacement housing</td>
+				<td>$75</td>
+			</tr>
+			<tr>
+				<td>HD Wrist Housing</td>
+				<td>$70</td>
+			</tr>
+			<tr>
+				<td>HD Skeleton Housing</td>
+				<td>$75</td>
+			</tr>
+			<tr>
+				<td>HD Replacement battery</td>
+				<td>$45</td>
+			</tr>
+			<tr>
+				<td>Anti Fog Kit</td>
+				<td>$25</td>
+			</tr>
+			<tr>
+				<td>LCD Backpack</td>
+				<td>$160</td>
+			</tr>
+			<tr>
+				<td>HD Battery Backpack</td>
+				<td>$80</td>
+			</tr>
+			<tr>
+				<td>3D Hero System, includes double case and cables</td>
+				<td>$195</td>
+			</tr>
+			<tr>
+				<td>USB wall charger for HD camera</td>
+				<td>$20</td>
+			</tr>
+			<tr>
+				<td>Ride Hero Handle Bar Mount</td>
+				<td>$45</td>
+			</tr>
+			<tr>
+				<td>Roll Cage Mount</td>
+				<td>$55</td>
+			</tr>
+			<tr>
+				<td>Vented Helmet Strap</td>
+				<td>$30</td>
+			</tr>
+			<tr>
+				<td>Surf Expansion Pack</td>
+				<td>$45</td>
+			</tr>
+			<tr>
+				<td>Chest Mount Harness</td>
+				<td>$75</td>
+			</tr>
+			<tr>
+				<td>Grab Bag</td>
+				<td>$45</td>
+			</tr>
+			<tr>
+				<td>Replacement Lens Kit, 170 wide only</td>
+				<td>$45</td>
+			</tr>
+			<tr>
+				<td>Suction Cup Mount</td>
+				<td>$55</td>
+			</tr>
+			<tr>
+				<td>Tripod Adaptor</td>
+				<td>$20</td>
+			</tr>
+			<tr>
+				<td>Head Strap</td>
+				<td>$30</td>
+			</tr>
+			<tr>
+				<td>Flat Adhesive Mounts (5 per pack)</td>
+				<td>$45</td>
+			</tr>
+			<tr>
+				<td>Curved Adhesive Mounts (5 per pack)</td>
+				<td>$45</td>
+			</tr>
+			<tr>
+				<td>Helmet Front Mount</td>
+				<td>$25</td>
+			</tr>
+			<tr>
+				<td>NVG base plate</td>
+				<td>$55</td>
+			</tr>
+		</tbody>
+	</table>
+	
+</page>
