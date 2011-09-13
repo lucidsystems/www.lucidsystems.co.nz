@@ -83,6 +83,9 @@ use Utopia::Middleware::Redirector, {
 		
 		# Solutions
 		'/lucidsolprebuilt.html' => '/services/infinity-systems/',
+
+		# Software Freedom Day
+		'/sfd' => 'http://wiki.softwarefreedomday.org/2011/NewZealand/Christchurch/lucidsystems',
 	},
 	:patterns => [
 		# Variations of the old printing works page URL
