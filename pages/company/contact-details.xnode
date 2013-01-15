@@ -11,12 +11,14 @@
 		<dd>Christchurch 8641</dd>
 		<dd>New Zealand</dd>
 		
+		<!--
 		<dt>Central Office</dt>
 		<dd>Lucid Information Systems</dd>
 		<dd>28 Cathedral Square</dd>
 		<dd>Christchurch 8011</dd>
 		<dd>New Zealand</dd>
 		<dd><small><a href="http://maps.google.co.nz/?q=28A+Cathedral+Square,+Christchurch+8011,+New+Zealand">Locate on Google Maps</a></small></dd>
+		-->
 		
 		<?r if request[:shipping] ?>
 		<dt>Shipping Address</dt>
@@ -28,7 +30,7 @@
 		<?r end ?>
 		
 		<dt>Central Office Phone Number</dt>
-		<dd>All Enquiries: <a href="tel:64-3-3666638">+64 3 366 6638</a></dd>
+		<dd>All Enquiries: <a href="tel:64-3-389-0982">+64 3 389 0982</a></dd>
 		
 		<dt>After Hours Emergency Contacts</dt>
 		<dd>Henri's Pager: <a href="tel:64-8-6507685">+64 8 650 7685</a></dd>
