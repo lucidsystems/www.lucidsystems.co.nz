@@ -1,4 +1,7 @@
-Chorus.createBrush('Sketchy', {
+//	This file is part of the "Chorus" project, and is distributed under the MIT License.
+//	Copyright (c) 2011 Samuel G. D. Williams. <http://www.oriontransfer.co.nz>
+
+Chorus.createBrush('sketchy', {
 	init: function() {
 		this.points = new Array();
 		this.count = 0;

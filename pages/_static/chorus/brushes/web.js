@@ -1,8 +1,7 @@
-Chorus.Brushes.Web = function(context) {
-	this.init(context);
-}
+//	This file is part of the "Chorus" project, and is distributed under the MIT License.
+//	Copyright (c) 2011 Samuel G. D. Williams. <http://www.oriontransfer.co.nz>
 
-Chorus.Brushes.Web.prototype = {
+Chorus.createBrush('web', {
 	context: null,
 
 	prevx: null, prevy: null,
@@ -43,14 +42,12 @@ Chorus.Brushes.Web.prototype = {
 
 		this.context.strokeStyle = "rgba(" + this.color + ",0.1)";
 
-		for (i = 0; i < this.points.length; i++)
-		{
+		for (i = 0; i < this.points.length; i++) {
 			dx = this.points[i][0] - this.points[this.count][0];
 			dy = this.points[i][1] - this.points[this.count][1];
 			d = dx * dx + dy * dy;
 
-			if (d < 2500 && Math.random() > 0.9)
-			{
+			if (d < 2500 && Math.random() > 0.9) {
 				this.context.beginPath();
 				this.context.moveTo(this.points[this.count][0], this.points[this.count][1]);
 				this.context.lineTo(this.points[i][0], this.points[i][1]);
@@ -66,4 +63,4 @@ Chorus.Brushes.Web.prototype = {
 
 	strokeEnd: function() {
 	}
-}
+});

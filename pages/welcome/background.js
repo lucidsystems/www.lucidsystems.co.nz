@@ -7,7 +7,7 @@ $(function() {
 		
 		var areaScale = (chorus.canvas.height * chorus.canvas.width) / (1280.0 * 1024.0);
 /*
-		chorus.getBrush('Sketchy', function(brush) {
+		chorus.getBrush('sketchy', function(brush) {
 			brush.color = [80, 200, 60];
 			setTimeout(function() {
 				var w = chorus.canvas.width, h = chorus.canvas.height - 50;
@@ -27,7 +27,7 @@ $(function() {
 		eY -= eY * 0.2 * Math.random();
 		var eS = Math.max(0.8, Math.random());
 		
-		chorus.getBrush('Sketchy', function(brush) {
+		chorus.getBrush('sketchy', function(brush) {
 			brush.setScale(areaScale * 0.1);
 			
 			var sx = eS, sy = sx;
@@ -38,7 +38,7 @@ $(function() {
 			});
 		});
 		
-		chorus.getBrush('LongFur', function(brush) {
+		chorus.getBrush('longfur', function(brush) {
 			brush.setScale(areaScale * 0.5)
 			
 			var x = chorus.canvas.width * Math.random(), y = chorus.canvas.height * 0.2 * Math.random();
@@ -50,7 +50,7 @@ $(function() {
 		});
 /*
 		if (Math.random() < 0.8) {
-			chorus.getBrush('Web', function(brush) {
+			chorus.getBrush('web', function(brush) {
 				var sx = eS * 0.8 * Math.max(0.9, Math.random()), sy = sx;
 				if (Math.random() < 0.5) sx = sx * -1;
 
@@ -60,7 +60,7 @@ $(function() {
 			})
 		}
 */
-		chorus.getBrush('Sketchy', function(brush) {
+		chorus.getBrush('sketchy', function(brush) {
 			brush.setScale(areaScale * 0.8);
 			
 			var x = (chorus.canvas.width / 5) + (100 * Math.random()), y = eY - 500;
