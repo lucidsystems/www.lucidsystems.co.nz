@@ -4,38 +4,32 @@ UTOPIA_ENV = (ENV['UTOPIA_ENV'] || ENV['RACK_ENV'] || :development).to_sym
 $LOAD_PATH << File.join(File.dirname(__FILE__), "lib")
 
 # It is recommended that you always explicity specify the version of the gem you are using.
-gem 'utopia', "0.9.55"
+gem 'utopia', "~> 0.12.0"
 require 'utopia/middleware/all'
-require 'utopia/tags/all'
 
-gem 'rack-contrib'
-require 'rack/contrib'
+gem 'utopia-extras'
+require 'utopia/tags/all'
+require 'utopia/tags/gallery'
+require 'utopia/tags/google_analytics'
+
+require 'rack/cache'
 
 gem 'xapian-rack'
 require 'xapian/rack/search'
-
-# Utopia relies heavily on accurately caching resources
-gem 'rack-cache'
-require 'rack/cache'
 
 gem 'mail'
 require 'mail'
 
 Mail.defaults do
-  delivery_method :smtp, { :enable_starttls_auto => false }
+	delivery_method :smtp, { :enable_starttls_auto => false }
 end
 
 if UTOPIA_ENV == :development
 	use Rack::ShowExceptions
 else
 	use Utopia::Middleware::ExceptionHandler, "/errors/exception"
-
-	# Fill out these details to receive email reports of exceptions when running in a production environment.
-	use Rack::MailExceptions do |mail|
-		mail.from "www@lucidsystems.org"
-		mail.to "lucid@lucidsystems.org"
-		mail.subject "www.lucidsystems.org Error: %s"
-	end
+	
+	use Utopia::Middleware::MailExceptions
 end
 
 use Rack::ContentLength
@@ -114,4 +108,4 @@ end
 
 use Utopia::Middleware::Content
 
-run lambda { [404, {}, []] }
+run lambda { |env| [404, {}, []] }
