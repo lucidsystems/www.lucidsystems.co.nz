@@ -41,7 +41,7 @@
 	
 	<form action="/search/index">
 		<div>
-			<label>How may we help you today?:
+			<label>How may we help you today?
 				<input type="search" name="query" value="#{(request[:query] || "").to_html}" /> 
 				<input type="image" src="/_static/search.png" alt="Search" />
 			</label>
