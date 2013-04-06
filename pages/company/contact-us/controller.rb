@@ -10,7 +10,7 @@ def on_index(path, request)
 
 	if request.options?
 		# Allow AJAX requests from different domains.
-		return :status => 200, :headers => ACCESS_CONTROLS
+		success! :headers => ACCESS_CONTROLS
 	end
 
 	if request.post?
@@ -30,18 +30,13 @@ def on_index(path, request)
 				body message.string
 			end
 
-			File.open("delivery.log", "a") do |fp|
-				buffer = mail.to_s
-				fp.puts "\r\n== Message Boundary : #{buffer.length} bytes ==\r\n" + buffer
-			end
-
 			mail.deliver!
 
 			if request.xhr?
 				# You also need to provide access control headers here.
-				return :status => :success, :headers => ACCESS_CONTROLS
+				success! :headers => ACCESS_CONTROLS
 			else
-				return redirect(params["from"] ? "success" : "success-no-reply")
+				redirect! (params["from"] ? "success" : "success-no-reply")
 			end
 		end
 	end
@@ -51,8 +46,8 @@ end
 
 def on_send(path, request)
 	begin
-		return on_index(path, request)
+		on_index(path, request)
 	rescue
-		return :unavailable
+		fail! :unavailable
 	end
 end
