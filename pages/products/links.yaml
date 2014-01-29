@@ -35,7 +35,7 @@ pelican:
 active-storage:
     title: "Active Storage"
     description: "High-performance high-availability RAID storage for media professionals."
-    uri: http://www.activestorage.com/
+    uri: http://www.active-storage.com/
     tags: ["Storage", "Videography"]
 allied-telesis:
     description: "Solutions for home, education and corporate computer networks of all sizes."
