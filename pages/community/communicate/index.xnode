@@ -20,7 +20,7 @@
 		However, you must <contact_us subject="Communicate Registration">register</contact_us>
 		and attend to be into win.</p>
 	
-	<gallery path="_prizes" tag="photo_thumbnail" process="photo_thumbnail,large" />
+	<gallery path="_prizes" tag="photo" process="photo,large" />
 	
 	<p>Registered attendees go into the raffle for each prize. If you do not
 		want to be part of a raffle you are welcome to tell the person who is

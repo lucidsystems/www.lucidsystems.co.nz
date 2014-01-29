@@ -4,7 +4,7 @@
 	<p>We are able to assist with the design, deployment and maintenance of storage for high-speed data transfer. This can involve a wide range
 		of concerns such as environment, networking and connectivity, security, backup and migration.</p>
 	
-	<gallery path="_products" tag="photo_thumbnail" process="photo_thumbnail,large" />
+	<gallery path="_products" tag="photo" process="photo,large" />
 	
 	<p>We have published several interesting articles about storage on our <a href="http://www.drobo.co.nz/blog/index">Storage Blog</a>. Of particular relevance is our article on <a href="http://www.drobo.co.nz/blog/2010-12/small-business-storage-solutions">Small Business Storage Solutions</a>.</p>
 	
@@ -14,5 +14,5 @@
 		Drobo devices offer incredible simplicity coupled with reliable operation and expansion, and is a fantastic option for individuals and
 		small-medium sized businesses/organisations.</p>
 	
-	<gallery path="_drobo" tag="photo_thumbnail" process="photo_thumbnail,large" />
+	<gallery path="_drobo" tag="photo" process="photo,large" />
 </page>

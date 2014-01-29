@@ -30,5 +30,5 @@
 	
 	<p>To register your interest, please <contact_us />.</p>
 	
-	<gallery path="_2009" tag="photo_thumbnail" process="photo_thumbnail,large" />
+	<gallery path="_2009" tag="photo" process="photo,large" />
 </page>

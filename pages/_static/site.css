@@ -307,7 +307,7 @@ dl.search-results dd.href {
 	padding: 5px;
 }
 
-.gallery .photo_thumbnail, .gallery .thumbnail {
+.gallery .photo, .gallery .thumbnail {
 	display: inline-block;
 	vertical-align: middle;
 }
@@ -316,12 +316,12 @@ dl.search-results dd.href {
 	margin: 10px 10px 5px;
 }
 
-.gallery .photo_thumbnail {
+.gallery .photo {
 	width: 320px;
 	margin: 10px;
 }
 
-.gallery .photo_thumbnail .caption {
+.gallery .photo .caption {
 	font-size: 0.8em;
 }
 
