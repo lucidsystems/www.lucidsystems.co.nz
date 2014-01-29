@@ -3,21 +3,17 @@
 UTOPIA_ENV = (ENV['UTOPIA_ENV'] || ENV['RACK_ENV'] || :development).to_sym
 $LOAD_PATH << File.join(File.dirname(__FILE__), "lib")
 
-# It is recommended that you always explicity specify the version of the gem you are using.
-gem 'utopia', "~> 0.12.0"
 require 'utopia/middleware/all'
 
-gem 'utopia-extras'
-require 'utopia/tags/all'
+require 'utopia/tags/environment'
+require 'utopia/tags/google-analytics'
+
 require 'utopia/tags/gallery'
-require 'utopia/tags/google_analytics'
 
 require 'rack/cache'
 
-gem 'xapian-rack'
 require 'xapian/rack/search'
 
-gem 'mail'
 require 'mail'
 
 Mail.defaults do
@@ -28,12 +24,10 @@ if UTOPIA_ENV == :development
 	use Rack::ShowExceptions
 else
 	use Utopia::Middleware::ExceptionHandler, "/errors/exception"
-	
 	use Utopia::Middleware::MailExceptions
 end
 
 use Rack::ContentLength
-use Utopia::Middleware::Logger
 
 use Xapian::Rack::Search, {
 	:database => Utopia::Middleware.default_root('xapian.db'),
