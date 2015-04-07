@@ -15,14 +15,14 @@
 <div class="tags" style="display: none">
 	<a href="#">All</a>
 	<?r tags.keys.each do |tag| ?>
-	<a href="#" name="#{tag}">#{tag.to_title}</a>
+	<a href="#" name="#{Strings::to_title tag}">#{tag}</a>
 	<?r end ?>
 </div>
 
 <ul class="solutions">
 	<?r solutions.each do |solution| ?>
 	<li data-id="#{solution.name}" class="#{(solution[:tags] || []).join(' ')}">
-		<a href="#{solution.href}" style="background-image: url('_images/#{solution.name}.jpg')" alt="#{solution.name}" title="#{solution[:description].to_html}">
+		<a href="#{Strings::to_html solution.href}" style="background-image: url('_images/#{solution.name}.jpg')" alt="#{solution.name}" title="#{solution[:description]}">
 			<div class="title">#{solution.title}</div>
 		</a>
 	</li>

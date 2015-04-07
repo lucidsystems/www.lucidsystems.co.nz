@@ -1,14 +1,12 @@
 
-source "http://rubygems.org"
+source "https://rubygems.org"
 
-gem "utopia", "~> 0.12.2"
+gem "utopia", "~> 1.0.6"
 gem "utopia-tags-gallery"
 gem "utopia-tags-google-analytics"
-
-gem 'mail'
 
 gem 'xapian-rack'
 
 group :development do
-	gem "thin"
+	gem "puma"
 end

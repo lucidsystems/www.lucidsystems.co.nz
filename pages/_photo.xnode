@@ -1,6 +1,6 @@
 <div class="photo">
-	<a rel="photos" class="thumbnail lightbox" href="#{attributes["src"].large}" title="#{attributes["alt"].to_html}">
-		<img src="#{attributes["src"].photo}" alt="#{attributes["alt"].to_html}" />
+	<a rel="photos" class="thumbnail lightbox" href="#{Strings::to_html attributes["src"].large}" title="#{attributes["alt"]}">
+		<img src="#{Strings::to_html attributes["src"].photo}" alt="#{attributes["alt"]}" />
 	</a>
-	<div class="caption">#{attributes["alt"].to_html}</div>
+	<div class="caption">#{Strings::to_html attributes["alt"]}</div>
 </div>

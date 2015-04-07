@@ -1,8 +1,8 @@
 <?r prev = nil ?>
 <div class="navigation">
 	<ul class="trail">
-	<?r Path.create(first.node.uri_path || attributes['path']).ascend.reverse.each do |path| ?>
-		<?r link = parent.node.links(path.dirname, :name => path.basename, :locale => request.current_locale).first
+	<?r Utopia::Path.create(first.node.uri_path || attributes['path']).descend.each do |path| ?>
+		<?r link = parent.node.links(path.dirname, :name => path.last, :locale => request.current_locale).first
 		
 		next if link == prev
 		
