@@ -42,7 +42,7 @@
 		<footer />
 		
 		<env only="production">
-			<google_analytics id="UA-2484649-9" />
+			<google-analytics id="UA-2484649-9" />
 		</env>
 		
 		<!--[if lt IE 9]>
