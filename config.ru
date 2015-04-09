@@ -40,9 +40,8 @@ use Xapian::Rack::Search, {
 		'/',
 		'http://www.led-lighting.co.nz/',
 		'http://www.litepanels.co.nz/',
-		'http://www.drobo.co.nz/',
 	],
-	:domains => ["www.led-lighing.co.nz", "www.litepanels.co.nz", "www.drobo.co.nz"]
+	:domains => ["www.led-lighing.co.nz", "www.litepanels.co.nz"]
 }
 
 use Utopia::Redirector,
