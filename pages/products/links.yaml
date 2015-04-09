@@ -15,13 +15,7 @@ led-tubes:
 drobo:
     title: "Drobo Storage Robot"
     description: "The Drobo Storage Robot takes ease of use and expandability to the next level."
-    uri: http://www.drobo.co.nz/
     tags: ["Storage", "Photography", "Videography"]
-wiebetech:
-    title: "WiebeTech"
-    description: "WiebeTech provide storage enclosures featuring advanced encryption and forensics features."
-    uri: http://www.wiebetech.com/
-    tags: ["Storage"]
 omni:
     title: "The Omni Group"
     description: "The Omni Group produce a fantastic range of software products including tools for diagrams, graphs, and organisation."
