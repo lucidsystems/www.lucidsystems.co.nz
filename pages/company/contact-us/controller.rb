@@ -5,12 +5,12 @@ ACCESS_CONTROLS = {
 	"Access-Control-Max-Age" => "60"
 }
 
-def on_index(path, request)
+def send_email(request)
 	params = request.params
 
 	if request.options?
 		# Allow AJAX requests from different domains.
-		success! :headers => ACCESS_CONTROLS
+		success! headers: ACCESS_CONTROLS
 	end
 
 	if request.post?
@@ -34,19 +34,21 @@ def on_index(path, request)
 
 			if request.xhr?
 				# You also need to provide access control headers here.
-				success! :headers => ACCESS_CONTROLS
+				success! headers: ACCESS_CONTROLS
 			else
-				redirect! (params["from"] ? "success" : "success-no-reply")
+				redirect!(params["from"] ? "success" : "success-no-reply")
 			end
 		end
 	end
-	
-	return nil
 end
 
-def on_send(path, request)
+on 'index' do |request|
+	send_email(request)
+end
+
+on 'send' do |
 	begin
-		on_index(path, request)
+		send_email(request)
 	rescue
 		fail! :unavailable
 	end

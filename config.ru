@@ -8,7 +8,7 @@ Encoding.default_internal = Encoding::UTF_8
 RACK_ENV = ENV.fetch('RACK_ENV', :development).to_sym unless defined?(RACK_ENV)
 
 # Allow loading library code from lib directory:
-$LOAD_PATH << File.expand_path("../lib", __FILE__)
+$LOAD_PATH << File.expand_path("lib", __dir__)
 
 require 'utopia'
 require 'utopia/tags/gallery'
@@ -32,17 +32,18 @@ if RACK_ENV == :production
 		verbose: RACK_ENV == :development
 end
 
-use Rack::ContentLength
-
 use Xapian::Rack::Search, {
 	:database => Utopia::default_root('xapian.db'),
 	:roots => [
 		'/',
 		'http://www.led-lighting.co.nz/',
 		'http://www.litepanels.co.nz/',
+		'http://solar-panels.nz/',
 	],
-	:domains => ["www.led-lighing.co.nz", "www.litepanels.co.nz"]
+	:domains => ["www.led-lighing.co.nz", "www.litepanels.co.nz", "solar-panels.nz"]
 }
+
+use Rack::ContentLength
 
 use Utopia::Redirector,
 	patterns: [
@@ -53,7 +54,7 @@ use Utopia::Redirector,
 		# Variations of the /contact URL, details provided by Henri
 		[:starts_with, '/contact', '/company/contact-details'],
 	],
-	:strings => {
+	strings: {
 		'/' => '/welcome/index',
 		'/links/drobo/reseller' => '/products/drobo',
 		'/links/backblaze' => 'http://www.backblaze.com/partner/af0692',
@@ -78,18 +79,20 @@ use Utopia::Redirector,
 		'/printingworks/printingmanager/index' => '/projects/printing-works',
 		'/lucidprintersetup.html' => '/projects/printing-works',
 		
-		# Contact Details
-		'/lucidcontact.php' => '/company/contact-details',
-		
 		# Solutions
 		'/lucidsolprebuilt.html' => '/services/infinity-systems/',
-
+		
 		# Software Freedom Day
 		'/sfd' => 'http://wiki.softwarefreedomday.org/2011/NewZealand/Christchurch/lucidsystems',
 	},
 	errors: {
 		404 => "/errors/file-not-found"
 	}
+
+use Utopia::Localization,
+	:default_locale => 'en',
+	:locales => ['en', 'de', 'ja', 'zh'],
+	:nonlocalized => ['/_static/', '/_cache/']
 
 use Utopia::Controller,
 	cache_controllers: (RACK_ENV == :production)

@@ -20,7 +20,7 @@
 		<?r if results.matches_estimated == 0 ?>
 			<p>Unfortunately your query for #{Strings::to_html query.dump} did not match any pages. If you would like personalised assistance, please <contact_us /> and we'd be happy to help.</p>
 		<?r else ?>
-			<p>Approximately #{Strings::to_html results.matches_estimated} results found out of #{search.database.doccount} total for #{query.dump}:</p>
+			<p>Approximately #{Strings::to_html(results.matches_estimated.to_s)} results found out of #{search.database.doccount} total for #{query.dump}:</p>
 	
 			<dl class="search-results">
 			<?r 
