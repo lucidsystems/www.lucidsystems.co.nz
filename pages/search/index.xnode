@@ -26,6 +26,7 @@
 			<?r 
 					results.matches.each do |m|
 						resource = YAML::load(m.document.data)
+						
 						metadata = resource[:metadata]
 			?>
 				<dt><a href="#{Strings::to_html resource[:name]}">#{Strings::to_html metadata[:title]}</a> (#{m.percent}% relevance)</dt>

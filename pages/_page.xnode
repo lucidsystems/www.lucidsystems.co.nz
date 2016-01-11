@@ -1,14 +1,14 @@
-<?r response.cache! ?>
 <!DOCTYPE html>
 <html>
 	<head>
+		<?r response.content_type = "text/html; charset=utf-8" ?>
+		<?r response.cache! ?>
+		
 		<?r if title = (attributes["title"] || @title) ?>
 			<title>#{title} - Lucid Information Systems</title>
 		<?r else ?>
 			<title>Lucid Information Systems</title>
 		<?r end ?>
-		
-		<meta http-equiv="X-UA-Compatible" content="IE=8" />
 		
 		<link rel="icon" type="image/png" href="/_static/icon.png" />
 		<link rel="stylesheet" href="/_static/site.css" type="text/css" media="screen" />
