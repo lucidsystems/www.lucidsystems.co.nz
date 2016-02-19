@@ -13,6 +13,7 @@ GEM
     rack (1.6.4)
     rack-cache (1.2)
       rack (>= 0.4)
+    rake (10.5.0)
     rmagick (2.15.4)
     trenni (1.4.5)
     utopia (1.2.4)
@@ -40,6 +41,7 @@ PLATFORMS
 
 DEPENDENCIES
   puma
+  rake (~> 10.5.0)
   utopia (~> 1.2.3)
   utopia-tags-gallery
   utopia-tags-google-analytics
