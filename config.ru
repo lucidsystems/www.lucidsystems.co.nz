@@ -13,7 +13,6 @@ $LOAD_PATH << File.expand_path("lib", __dir__)
 require 'utopia'
 require 'utopia/tags/gallery'
 require 'utopia/tags/google-analytics'
-require 'xapian/rack/search'
 require 'rack/cache'
 
 if RACK_ENV == :production
@@ -32,16 +31,16 @@ if RACK_ENV == :production
 		verbose: RACK_ENV == :development
 end
 
-use Xapian::Rack::Search, {
-	:database => Utopia::default_root('xapian.db'),
-	:roots => [
-		'/',
-		'http://www.led-lighting.co.nz/',
-		'http://www.litepanels.co.nz/',
-		'http://solar-panels.nz/',
-	],
-	:domains => ["www.led-lighing.co.nz", "www.litepanels.co.nz", "solar-panels.nz"]
-}
+# use Xapian::Rack::Search, {
+# 	:database => Utopia::default_root('xapian.db'),
+# 	:roots => [
+# 		'/',
+# 		'http://www.led-lighting.co.nz/',
+# 		'http://www.litepanels.co.nz/',
+# 		'http://solar-panels.nz/',
+# 	],
+# 	:domains => ["www.led-lighing.co.nz", "www.litepanels.co.nz", "solar-panels.nz"]
+# }
 
 use Rack::ContentLength
 

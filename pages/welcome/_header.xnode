@@ -38,13 +38,4 @@
 	<div class="rhs" style="float: right">
 		<contact_us><img src="/_static/contact.png" /><span>Contact Us</span></contact_us>
 	</div>
-	
-	<form action="/search/index">
-		<div>
-			<label>How may we help you today?
-				<input type="search" name="query" value="#{Strings::to_html (request[:query] || "")}" /> 
-				<input type="image" src="/_static/search.png" alt="Search" />
-			</label>
-		</div>
-	</form>
 </div>

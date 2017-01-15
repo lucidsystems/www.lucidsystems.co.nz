@@ -1,20 +1,17 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    concurrent-ruby (1.0.0)
-    json (1.8.3)
-    mail (2.6.3)
-      mime-types (>= 1.16, < 3)
-    mime-types (2.99)
-    mini_portile2 (2.0.0)
-    nokogiri (1.6.7.2)
-      mini_portile2 (~> 2.0.0.rc2)
-    puma (2.16.0)
-    rack (1.6.4)
+    concurrent-ruby (1.0.4)
+    json (2.0.3)
+    mail (2.6.4)
+      mime-types (>= 1.16, < 4)
+    mime-types (2.99.3)
+    puma (3.6.2)
+    rack (1.6.5)
     rack-cache (1.2)
       rack (>= 0.4)
     rake (10.5.0)
-    rmagick (2.15.4)
+    rmagick (2.16.0)
     trenni (1.4.5)
     utopia (1.2.4)
       concurrent-ruby (~> 1.0.0)
@@ -29,12 +26,6 @@ GEM
     utopia-tags-google-analytics (1.0.1)
       json
       utopia (~> 1.0)
-    xapian-core (1.2.20.2)
-    xapian-indexer (1.2.20.1)
-      nokogiri
-      xapian-core (~> 1.2.20)
-    xapian-rack (1.2.20.1)
-      xapian-indexer (~> 1.2.20)
 
 PLATFORMS
   ruby
@@ -45,7 +36,6 @@ DEPENDENCIES
   utopia (~> 1.2.3)
   utopia-tags-gallery
   utopia-tags-google-analytics
-  xapian-rack
 
 BUNDLED WITH
-   1.11.2
+   1.13.6
