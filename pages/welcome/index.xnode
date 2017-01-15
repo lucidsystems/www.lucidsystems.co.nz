@@ -1,6 +1,4 @@
 <page>
-	<header />
-	
 	<div class="quad tl">
 		<a href="/products" class="box"><h1>Products</h1></a>
 	</div>
