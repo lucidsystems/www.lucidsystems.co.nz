@@ -1,4 +1,4 @@
-<page>
+<content:page>
 	<?r @title = "Communicate" ?>
 	
 	<div class="gallery">
@@ -17,7 +17,7 @@
 	<h2>Prizes</h2>
 	
 	<p>There are some great prizes lined up for the first meeting of 2011.
-		However, you must <contact_us subject="Communicate Registration">register</contact_us>
+		However, you must <content:contact-us subject="Communicate Registration">register</content:contact-us>
 		and attend to be into win.</p>
 	
 	<gallery path="_prizes" tag="photo" process="photo,large" />
@@ -33,4 +33,4 @@
 	
 	<p>If you are interested in presenting, please mention this when you
 		register.</p>
-</page>
+</content:page>

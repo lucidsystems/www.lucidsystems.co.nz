@@ -1,5 +1,5 @@
-<page>
-	<heading>Backup</heading>
+<content:page>
+	<content:heading>Backup</content:heading>
 	
 	<p>We provide a wide range of services including the design of backup policies and deployment of appropriate storage hardware.</p>
 	
@@ -26,4 +26,4 @@
 		
 		<li><a href="/projects/lsync">LSync</a> &mdash; LSync is a tool that can be used to perform a wide variety of backup and synchronization tasks.</li>
 	</ul>
-</page>
+</content:page>

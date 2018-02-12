@@ -1,5 +1,5 @@
-<page>
-	<heading>Contact Us</heading>
+<content:page>
+	<content:heading>Contact Us</content:heading>
 	
 	<p>Please fill out the following form to send us a message. If you want a response, please include a valid "Reply To:" email address.</p>
 	
@@ -40,4 +40,4 @@
 			}
 		})
 	</script>
-</page>
+</content:page>

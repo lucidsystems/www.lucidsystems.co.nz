@@ -1,5 +1,5 @@
-<page>
-	<heading>Contact Details</heading>
+<content:page>
+	<content:heading>Contact Details</content:heading>
 	
 	<dl class="basic">
 		<dt>Email Address</dt>
@@ -38,4 +38,4 @@
 	</dl>
 	
 	<p>You may not contact us for promotional/marketing purposes or harvest these contact details into a database without our prior permission.</p>
-</page>
+</content:page>

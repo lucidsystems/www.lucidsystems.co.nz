@@ -1,9 +1,8 @@
 <div id="footer">
 		<!--  It took {{benchmark}}s to render. -->
-		&copy; 2010 <a href="/company">Lucid Information Systems Ltd</a>.
+		&copy; #{Date.today.year} <a href="/company">Lucid Information Systems Ltd</a>.
 		| <a href="/company/contact-us" onclick="javascript:resetContactPopup(true); return false;">Contact Us</a>
 		| <a href="http://twitter.com/lucid_systems" style="vertical-align: -50%;"><img src="/_static/twitter-icon.png" /></a>
-		| <a href="http://www.linkedin.com/company/lucid-information-systems?trk=fc_badge" style="vertical-align: -50%;"><img src="http://static01.linkedin.com/scds/common/u/img/webpromo/btn_cofollow_badge.png" locale="en" alt="Lucid Information Systems on LinkedIn" /></a>
 		| <a href="/company/terms-and-conditions">Disclaimer</a>
 		| Website designed by <a href="http://www.oriontransfer.co.nz/">Orion Transfer Ltd</a>
 </div>

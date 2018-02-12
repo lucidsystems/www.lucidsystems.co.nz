@@ -1,5 +1,5 @@
-<page>
-	<heading>Data Robotics Drobo</heading>
+<content:page>
+	<content:heading>Data Robotics Drobo</content:heading>
 	
 	<p>Drobo products are engineered to be the heart of your data storage solution needs; for the home, professional, small to medium business, and corporate department..</p>
 	
@@ -10,9 +10,9 @@
 		<li>Offsite backup synchronisation features.</li>
 	</ul>
 	
-	<p>Please <contact_us>Contact Us</contact_us> for support regarding Drobo products.</p>
+	<p>Please <content:contact-us>Contact Us</content:contact-us> for support regarding Drobo products.</p>
 	
 	<div class="gallery">
 		<img src="DroboPro.jpg" alt="There's a Drobo for Everyone"/>
 	</div>
-</page>
+</content:page>

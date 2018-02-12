@@ -1,5 +1,5 @@
-<page>
-	<heading>Professional Lighting</heading>
+<content:page>
+	<content:heading>Professional Lighting</content:heading>
 	
 	<p>We are able to provide a wide range of professional lighting services and consultation.</p>
 	
@@ -17,7 +17,7 @@
         </tbody>
     </table>
 	
-	<p>For more information regarding our professional lighting services please <contact_us /> with your requirements.</p>
+	<p>For more information regarding our professional lighting services please <content:contact-us /> with your requirements.</p>
 	
 	<h2>Equipment</h2>
 	
@@ -32,4 +32,4 @@
 		<li>1x <a href="http://www.apc.com/products/resource/include/techspec_index.cfm?base_sku=SUA1500I">Battery Power Supply</a> (for field work of up to 4 hours at a time).</li>
 		<li>Extension cables as required.</li>
 	</ul>
-</page>
+</content:page>

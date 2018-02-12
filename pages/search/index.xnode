@@ -1,14 +1,14 @@
 <?r response.do_not_cache! ?>
-<page>
+<content:page>
 	<?r
 		query = request[:query] || ""
 		search = Xapian::Rack.get(request.env)
 	?>
 	
 	<?r if query == "" ?>
-	<heading>Search</heading>
+	<content:heading>Search</content:heading>
 	<?r else ?>
-	<heading>Search Results</heading>
+	<content:heading>Search Results</content:heading>
 	<?r end ?>
 	
 	<!-- <search /> -->
@@ -18,7 +18,7 @@
 			results = Xapian::Rack.find(request.env, query, {:options => Xapian::QueryParser::FLAG_WILDCARD})
 	?>	
 		<?r if results.matches_estimated == 0 ?>
-			<p>Unfortunately your query for #{Strings::to_html query.dump} did not match any pages. If you would like personalised assistance, please <contact_us /> and we'd be happy to help.</p>
+			<p>Unfortunately your query for #{Strings::to_html query.dump} did not match any pages. If you would like personalised assistance, please <content:contact-us /> and we'd be happy to help.</p>
 		<?r else ?>
 			<p>Approximately #{Strings::to_html(results.matches_estimated.to_s)} results found out of #{search.database.doccount} total for #{query.dump}:</p>
 	
@@ -42,4 +42,4 @@
 	<?r
 		end
 	?>
-</page>
+</content:page>

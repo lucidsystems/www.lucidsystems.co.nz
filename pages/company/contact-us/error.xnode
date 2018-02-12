@@ -1,5 +1,5 @@
-<page>
-	<heading>Contact Us</heading>
+<content:page>
+	<content:heading>Contact Us</content:heading>
 	
 	<p>
 		<strong>Your message has not been sent!</strong>
@@ -10,4 +10,4 @@
 	<p>If the problem persists, please email us directly <a href="mailto:lucid@lucidsystems.org">lucid@lucidsystems.org</a>.</p>
 	
 	<p>We sincerely apologize for any inconvenience caused.</p>
-</page>
+</content:page>

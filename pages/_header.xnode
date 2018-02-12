@@ -9,7 +9,7 @@
 			#{link.to_href}
 			<?r end ?>
 			
-			<contact_us>Contact Us</contact_us>
+			<content:contact-us>Contact Us</content:contact-us>
 		</div>
 		
 		<search label="Search" />

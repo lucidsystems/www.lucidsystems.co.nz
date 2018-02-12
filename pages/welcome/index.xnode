@@ -1,4 +1,4 @@
-<page>
+<content:page>
 	<div class="quad tl">
 		<a href="/products" class="box"><h1>Products</h1></a>
 	</div>
@@ -11,4 +11,4 @@
 	
 	<a class="quad br" href="/company">
 	</a>
-</page>
+</content:page>

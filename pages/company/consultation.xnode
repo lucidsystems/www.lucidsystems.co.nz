@@ -1,5 +1,5 @@
-<page>
-	<heading>Lucid Consultation</heading>
+<content:page>
+	<content:heading>Lucid Consultation</content:heading>
 	
 	<table class="basic">
 		<thead>
@@ -9,5 +9,5 @@
 			<tr><td>General Consultation</td><td>$120 / hour</td></tr>
 		</tbody>
 	</table>
-</page>
+</content:page>
 		

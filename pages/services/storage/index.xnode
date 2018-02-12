@@ -1,5 +1,5 @@
-<page>
-	<heading>Storage</heading>
+<content:page>
+	<content:heading>Storage</content:heading>
 	
 	<p>We are able to assist with the design, deployment and maintenance of storage for high-speed data transfer. This can involve a wide range
 		of concerns such as environment, networking and connectivity, security, backup and migration.</p>
@@ -15,4 +15,4 @@
 		small-medium sized businesses/organisations.</p>
 	
 	<gallery path="_drobo" tag="photo" process="photo,large" />
-</page>
+</content:page>

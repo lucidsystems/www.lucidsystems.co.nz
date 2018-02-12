@@ -1,5 +1,5 @@
-<page>
-	<heading>AddItemToDock</heading>
+<content:page>
+	<content:heading>AddItemToDock</content:heading>
 	
 	<p>AddItemToDock is a simple script for adding applications to the user's dock in Mac OS X.</p>
 	
@@ -9,4 +9,4 @@
 		<li><a href="additemtodock.zip">Download</a></li>
 		<li><a href="https://github.com/henri/additemtodock">Source Code</a></li>
 	</ul>
-</page>
+</content:page>

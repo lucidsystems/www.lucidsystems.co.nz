@@ -1,5 +1,5 @@
-<page>
-	<heading>Services</heading>
+<content:page>
+	<content:heading>Services</content:heading>
 	
 	<p>We provide a wide variety of services.</p>
 	
@@ -8,4 +8,4 @@
 		<li>#{link.to_href}<?r if link[:description] ?> &mdash; #{link[:description]}<?r end ?></li>
 		<?r end ?>
 	</ul>
-</page>
+</content:page>

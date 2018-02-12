@@ -1,5 +1,0 @@
-<?r 
-	subject = attributes['subject']
-	text = (content == "" ? "contact us" : content)
-	
-	if subject ?><a class="link" href="/company/contact-us/index?subject=#{Strings::to_html subject}" onclick="javascript:$('#contact [name=subject]').val('#{Strings::to_html subject}');resetContactPopup(true); return false;">#{text}</a><?r else ?><a class="link" href="/company/contact-us/index" onclick="javascript:resetContactPopup(true); return false;">#{text}</a><?r end ?>

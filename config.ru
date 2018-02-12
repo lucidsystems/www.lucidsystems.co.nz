@@ -1,112 +1,78 @@
 #!/usr/bin/env rackup
 
-# Setup default encoding:
-Encoding.default_external = Encoding::UTF_8
-Encoding.default_internal = Encoding::UTF_8
+require_relative 'config/environment'
 
-# Setup the server environment:
-RACK_ENV = ENV.fetch('RACK_ENV', :development).to_sym unless defined?(RACK_ENV)
-
-# Allow loading library code from lib directory:
-$LOAD_PATH << File.expand_path("lib", __dir__)
-
-require 'utopia'
-require 'utopia/tags/gallery'
-require 'utopia/tags/google-analytics'
-require 'rack/cache'
+require 'utopia/gallery'
+require 'utopia/analytics'
+require 'rack/freeze'
 
 if RACK_ENV == :production
-	use Utopia::ExceptionHandler, "/errors/exception"
-	use Utopia::MailExceptions
-elsif RACK_ENV == :development
-	use Rack::ShowExceptions
+	# Handle exceptions in production with a error page and send an email notification:
+	use Utopia::Exceptions::Handler
+	use Utopia::Exceptions::Mailer
+else
+	# We want to propate exceptions up when running tests:
+	use Rack::ShowExceptions unless RACK_ENV == :test
+	
+	# Serve the public directory in a similar way to the web server:
+	use Utopia::Static, root: 'public'
 end
 
 use Rack::Sendfile
 
-if RACK_ENV == :production
-	use Rack::Cache,
-		metastore: "file:#{Utopia::default_root("cache/meta")}",
-		entitystore: "file:#{Utopia::default_root("cache/body")}",
-		verbose: RACK_ENV == :development
-end
+use Utopia::ContentLength
 
-# use Xapian::Rack::Search, {
-# 	:database => Utopia::default_root('xapian.db'),
-# 	:roots => [
-# 		'/',
-# 		'http://www.led-lighting.co.nz/',
-# 		'http://www.litepanels.co.nz/',
-# 		'http://solar-panels.nz/',
-# 	],
-# 	:domains => ["www.led-lighing.co.nz", "www.litepanels.co.nz", "solar-panels.nz"]
-# }
+# Variations of the old printing works page URL
+use Utopia::Redirection::Moved, '/printingworks', '/projects/printing-works', flatten: true
 
-use Rack::ContentLength
+# Variations of the /contact URL, details provided by Henri
+use Utopia::Redirection::Moved, '/contact', '/company/contact-details', flatten: true
 
-use Utopia::Redirector,
-	patterns: [
-		Utopia::Redirector::DIRECTORY_INDEX,
-		# Variations of the old printing works page URL
-		[:starts_with, '/printingworks', '/projects/printing-works'],
-		
-		# Variations of the /contact URL, details provided by Henri
-		[:starts_with, '/contact', '/company/contact-details'],
-	],
-	strings: {
-		'/' => '/welcome/index',
-		'/links/drobo/reseller' => '/products/drobo',
-		'/links/backblaze' => 'http://www.backblaze.com/partner/af0692',
-		'/links/spideroak' => 'https://spideroak.com/download/promo/lucidsystems',
-		
-		# Contact Page
-		'/lucidcontact.php' => '/company/contact-us',
-		
-		# LBackup
-		'/tools/lbackup/download' => '/projects/lbackup',
-		'/tools/lbackup' => '/projects/lbackup',
-		'/lbackup' => '/projects/lbackup',
-		'/download/utilities/LBackup.zip' => 'http://www.lbackup.org/download/LBackup.zip',
-		
-		# AddItemToDock
-		'/luciddocktools.html' => '/projects/additemtodock',
-		'/download/utilities/additemtodock.dmg.zip' => '/projects/additemtodock/additemtodock.zip',
-		'/download/utilities/additemtodock.dmg' => '/projects/additemtodock/additemtodock.zip',
-		
-		# PrintingWorks
-		'/download/utilities/PrinterSetup.zip' => '/projects/printing-works',
-		'/printingworks/printingmanager/index' => '/projects/printing-works',
-		'/lucidprintersetup.html' => '/projects/printing-works',
-		
-		# Solutions
-		'/lucidsolprebuilt.html' => '/services/infinity-systems/',
-		
-		# Software Freedom Day
-		'/sfd' => 'http://wiki.softwarefreedomday.org/2011/NewZealand/Christchurch/lucidsystems',
-	},
-	errors: {
-		404 => "/errors/file-not-found"
-	}
+use Utopia::Redirection::Rewrite, {
+	'/' => '/welcome/index',
+	'/links/drobo/reseller' => '/products/drobo',
+	'/links/backblaze' => 'http://www.backblaze.com/partner/af0692',
+	'/links/spideroak' => 'https://spideroak.com/download/promo/lucidsystems',
+	
+	# Contact Page
+	'/lucidcontact.php' => '/company/contact-us',
+	
+	# LBackup
+	'/tools/lbackup/download' => '/projects/lbackup',
+	'/tools/lbackup' => '/projects/lbackup',
+	'/lbackup' => '/projects/lbackup',
+	'/download/utilities/LBackup.zip' => 'http://www.lbackup.org/download/LBackup.zip',
+	
+	# AddItemToDock
+	'/luciddocktools.html' => '/projects/additemtodock',
+	'/download/utilities/additemtodock.dmg.zip' => '/projects/additemtodock/additemtodock.zip',
+	'/download/utilities/additemtodock.dmg' => '/projects/additemtodock/additemtodock.zip',
+	
+	# PrintingWorks
+	'/download/utilities/PrinterSetup.zip' => '/projects/printing-works',
+	'/printingworks/printingmanager/index' => '/projects/printing-works',
+	'/lucidprintersetup.html' => '/projects/printing-works',
+	
+	# Solutions
+	'/lucidsolprebuilt.html' => '/services/infinity-systems/',
+	
+	# Software Freedom Day
+	'/sfd' => 'http://wiki.softwarefreedomday.org/2011/NewZealand/Christchurch/lucidsystems',
+}
 
-use Utopia::Localization,
-	:default_locale => 'en',
-	:locales => ['en', 'de', 'ja', 'zh'],
-	:nonlocalized => ['/_static/', '/_cache/']
+use Utopia::Redirection::DirectoryIndex
 
-use Utopia::Controller,
-	cache_controllers: (RACK_ENV == :production)
+use Utopia::Redirection::Errors,
+	404 => '/errors/file-not-found'
+
+use Utopia::Controller
 
 use Utopia::Static
 
-use Utopia::Content,
-	cache_templates: (RACK_ENV == :production),
-	tags: {
-		'deferred' => Utopia::Tags::Deferred,
-		'override' => Utopia::Tags::Override,
-		'node' => Utopia::Tags::Node,
-		'environment' => Utopia::Tags::Environment.for(RACK_ENV),
-		'gallery' => Utopia::Tags::Gallery,
-		'google-analytics' => Utopia::Tags::GoogleAnalytics,
-	}
+# Serve dynamic content
+use Utopia::Content, namespaces: {
+	'gallery' => Utopia::Gallery::Tags.new,
+	'analytics' => Utopia::Analytics,
+}
 
 run lambda { |env| [404, {}, []] }

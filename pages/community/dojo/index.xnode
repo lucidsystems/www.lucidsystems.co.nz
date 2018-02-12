@@ -1,5 +1,5 @@
-<page>
-	<?r @title = "Lucid Programming Dojo" ?>
+<content:page>
+	<?r document.attributes[:title] = "Lucid Programming Dojo" ?>
 	
 	<div class="gallery">
 		<img src="dojo.png" />
@@ -28,7 +28,7 @@
 		</tbody>
 	</table>
 	
-	<p>To register your interest, please <contact_us />.</p>
+	<p>To register your interest, please <content:contact-us subject="Programming Dojo"/>.</p>
 	
 	<gallery path="_2009" tag="photo" process="photo,large" />
-</page>
+</content:page>

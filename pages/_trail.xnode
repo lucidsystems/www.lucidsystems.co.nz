@@ -1,0 +1,17 @@
+<?r prev = nil ?>
+<div class="navigation">
+	<ul class="trail">
+	<?r Utopia::Path.create(first.node.uri_path || attributes['path']).descend.each do |path| ?>
+		<?r link = parent.node.links(path.dirname, :name => path.last, :locale => localization.current_locale).first
+		
+		next if link == prev
+		
+		if link ?>
+		<li>#{link.to_href}</li><li>/</li>
+		<?r end 
+		
+		prev = link
+		?>
+	<?r end ?>
+	</ul>
+</div>

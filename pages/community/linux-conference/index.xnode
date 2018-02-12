@@ -1,5 +1,5 @@
-<page>
-	<heading>Linux Conference</heading>
+<content:page>
+	<content:heading>Linux Conference</content:heading>
 	
 	<p>Lucid provides a wide variety of Linux based software solutions including <a href="/services/infinity-systems">virtualised servers</a> and firewalls.</p>
 	
@@ -8,4 +8,4 @@
 	<p>We travelled to Wellington to share our free and open source software solutions with other like-minded people.</p>
 	
 	<gallery path="_2010" tag="photo" process="photo,large" />
-</page>
+</content:page>

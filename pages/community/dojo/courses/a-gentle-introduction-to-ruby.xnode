@@ -1,5 +1,5 @@
-<page>
-	<course>A Gentle Introduction to Ruby</course>
+<content:page>
+	<content:course>A Gentle Introduction to Ruby</content:course>
 	
 	<h2>Course Outline</h2>
 	
@@ -37,4 +37,4 @@
 	<h2>Resources</h2>
 	
 	<p>Information covered in the course will be written up and provided online to attendees of the course. All source code and associated documentation will be made available.</p>
-</page>
+</content:page>

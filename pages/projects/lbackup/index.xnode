@@ -1,5 +1,5 @@
-<page>
-	<heading>LBackup</heading>
+<content:page>
+	<content:heading>LBackup</content:heading>
 	
 	<p>LBackup is a backup system for system administrators who require reliable backups with minimum fuss.</p>
 	
@@ -10,4 +10,4 @@
 		<li><a href="http://www.lbackup.org/source">Source Code</a></li>
 	</ul>
 	
-</page>
+</content:page>

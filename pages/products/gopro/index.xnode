@@ -1,7 +1,7 @@
-<page>
-	<heading>GoPro: HD Hero</heading>
+<content:page>
+	<content:heading>GoPro: HD Hero</content:heading>
 	
-	<p>We stocks and sells all GoPro cameras and accessories. For more information please visit <a href="http://gopro.com/">GoPro.com</a>. Please <contact_us /> to purchase.</p>
+	<p>We stocks and sells all GoPro cameras and accessories. For more information please visit <a href="http://gopro.com/">GoPro.com</a>. Please <content:contact-us /> to purchase.</p>
 	
 	<gallery path="_photos" tag="photo" process="photo,large" />
 	
@@ -137,4 +137,4 @@
 		</tbody>
 	</table>
 	
-</page>
+</content:page>
