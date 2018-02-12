@@ -1,0 +1,14 @@
+{
+  "name": "chorus",
+  "homepage": "https://github.com/ioquatix/chorus",
+  "_release": "7f89c4b515",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "7f89c4b51568a805910c70cc5b40f847aab00bf1"
+  },
+  "_source": "https://github.com/ioquatix/chorus.git",
+  "_target": "*",
+  "_originalSource": "chorus",
+  "_direct": true
+}
