@@ -1,7 +1,7 @@
 <content:page>
 	<?r @title = "Communicate" ?>
 	
-	<div class="gallery">
+	<div style="text-align: center">
 		<img src="communicate.png" alt="Rather than reinvent... communicate!" /><br/>
 		<strong>The Christchurch Information Technology Community</strong>
 	</div>

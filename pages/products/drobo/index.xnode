@@ -12,7 +12,7 @@
 	
 	<p>Please <content:contact-us>Contact Us</content:contact-us> for support regarding Drobo products.</p>
 	
-	<div class="gallery">
+	<div style="text-align: center">
 		<img src="DroboPro.jpg" alt="There's a Drobo for Everyone"/>
 	</div>
 </content:page>

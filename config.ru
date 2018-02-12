@@ -26,7 +26,7 @@ use Utopia::ContentLength
 use Utopia::Redirection::Moved, '/printingworks', '/projects/printing-works', flatten: true
 
 # Variations of the /contact URL, details provided by Henri
-use Utopia::Redirection::Moved, '/contact', '/company/contact-details', flatten: true
+use Utopia::Redirection::Moved, '/contact', '/company/contact-us', flatten: true
 
 use Utopia::Redirection::Rewrite, {
 	'/' => '/welcome/index',

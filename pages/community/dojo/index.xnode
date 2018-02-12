@@ -1,7 +1,7 @@
 <content:page>
 	<?r document.attributes[:title] = "Lucid Programming Dojo" ?>
 	
-	<div class="gallery">
+	<div style="text-align: center">
 		<img src="dojo.png" />
 	</div>
 	

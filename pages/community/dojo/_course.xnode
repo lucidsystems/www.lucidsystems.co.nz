@@ -1,3 +1,3 @@
-<div class="gallery"><img src="#{current.node.parent_path}/dojo.png" /></div>
+<div style="text-align: center"><img src="#{current.node.parent_path}/dojo.png" /></div>
 
 <content:heading><utopia:content /></content:heading>

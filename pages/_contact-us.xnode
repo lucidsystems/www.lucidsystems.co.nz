@@ -1,4 +1,4 @@
 <?r 
 	subject = attributes[:subject]
 	text = (content == "" ? "contact us" : content)
-?><a class="link" href="mailto:solutions@lucidsystems.co.nz?subject=#{subject}">#{text}</a><?r end ?>
+?><a class="link" href="mailto:solutions@lucidsystems.co.nz?subject=#{subject}">#{text}</a>

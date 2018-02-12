@@ -3,7 +3,7 @@
 	
 	<p>LitePanels are the premier solution for video and photographic lighting.</p>
 	
-	<div class="gallery">
+	<div style="text-align: center">
 		<img src="LitePanels-1x1.jpg" alt="LitePanels-1x1" />
 	</div>
 </content:page>
