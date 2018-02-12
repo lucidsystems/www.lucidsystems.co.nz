@@ -1,5 +1,4 @@
 <?r 
 	subject = attributes[:subject]
 	text = (content == "" ? "contact us" : content)
-	
-	if subject ?><a class="link" href="/company/contact-us/index?subject=#{subject}" onclick="javascript:$('#contact [name=subject]').val('#{subject}');resetContactPopup(true); return false;">#{text}</a><?r else ?><a class="link" href="/company/contact-us/index" onclick="javascript:resetContactPopup(true); return false;">#{text}</a><?r end ?>
+?><a class="link" href="mailto:solutions@lucidsystems.co.nz?subject=#{subject}">#{text}</a><?r end ?>
