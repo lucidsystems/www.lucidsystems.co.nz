@@ -300,35 +300,6 @@ dl.search-results dd.href {
 	margin: 0;
 }
 
-/* Photo Gallery */
-
-.gallery {
-	text-align: center;
-	padding: 5px;
-}
-
-.gallery .photo, .gallery .thumbnail {
-	display: inline-block;
-	vertical-align: middle;
-}
-
-.gallery img {
-	margin: 10px 10px 5px;
-}
-
-.gallery .photo {
-	width: 320px;
-	margin: 10px;
-}
-
-.gallery .photo .caption {
-	font-size: 0.8em;
-}
-
-#fancybox-title {
-	text-align: center;
-}
-
 /* Footer */
 
 #footer {

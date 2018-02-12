@@ -5,5 +5,5 @@
 	
 	<h2>Software Freedom Day 2010</h2>
 	
-	<gallery path="_2010" tag="photo" process="photo,large" />
+	<gallery:container path="_2010" tag="content:photo" />
 </content:page>

@@ -7,5 +7,5 @@
 	
 	<p>We travelled to Wellington to share our free and open source software solutions with other like-minded people.</p>
 	
-	<gallery path="_2010" tag="photo" process="photo,large" />
+	<gallery:container path="_2010" tag="content:photo" />
 </content:page>

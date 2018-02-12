@@ -3,7 +3,7 @@
 	
 	<p>We stocks and sells all GoPro cameras and accessories. For more information please visit <a href="http://gopro.com/">GoPro.com</a>. Please <content:contact-us /> to purchase.</p>
 	
-	<gallery path="_photos" tag="photo" process="photo,large" />
+	<gallery:container path="_photos" tag="content:photo" />
 	
 	<h2>Price List</h2>
 	

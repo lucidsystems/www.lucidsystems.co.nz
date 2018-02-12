@@ -9,7 +9,7 @@
 		However, without appropriate precautions, valuable and irreplaceable information can be lost. 
 	</p>
 	
-	<gallery path="_backup" tag="photo" process="photo,large" />
+	<gallery:container path="_backup" tag="content:photo" />
 	
 	<p>If you have valuable digital information, such as photographs, documents or spreadsheets, a hardware or software failure that 
 		causes data loss can be a serious disaster that can have a major impact on your life or business.</p>

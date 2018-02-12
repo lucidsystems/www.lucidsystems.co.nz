@@ -1,6 +1,11 @@
-<div class="photo">
-	<a rel="photos" class="thumbnail lightbox" href="#{Strings::to_html attributes["src"].large.to_s}" title="#{attributes["alt"]}">
-		<img src="#{Strings::to_html attributes["src"].photo.to_s}" alt="#{attributes["alt"]}" />
+<figure class="photo">
+	<a href="#{attributes[:src].large}" title="#{attributes[:alt]}">
+		<picture>
+			<source srcset="#{attributes[:src].small}, #{attributes[:src].medium} 2x"/>
+			<img src="#{attributes[:src].small}" alt="#{attributes[:alt]}"/>
+		</picture>
 	</a>
-	<div class="caption">#{Strings::to_html attributes["alt"].to_s}</div>
-</div>
+	<?r if caption = attributes[:alt].caption ?>
+		<figcaption>#{caption}</figcaption>
+	<?r end ?>
+</figure>
