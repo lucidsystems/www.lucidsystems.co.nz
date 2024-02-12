@@ -1,4 +1,4 @@
-name: Development
+name: Deployment
 
 on: [push]
 
@@ -10,8 +10,7 @@ jobs:
           - ubuntu
         
         ruby:
-          - 2.6
-          - 2.7
+          - 3.0.6
     
     runs-on: ${{matrix.os}}-latest
     
@@ -20,7 +19,7 @@ jobs:
     
     - name: Install dependencies...
       run: |
-        sudo apt-get install pkg-config
+        sudo apt-get install libvips
     
     - uses: ruby/setup-ruby@v1
       with:
@@ -28,12 +27,12 @@ jobs:
         bundler-cache: true
     
     - name: Run tests...
-      run: ${{matrix.env}} bundle exec rspec
+      run: ${{matrix.env}} bundle exec sus
   
   deploy:
     needs: test
     runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/master'
+    if: github.ref == 'refs/heads/main'
     
     steps:
     - uses: actions/checkout@v1
@@ -45,4 +44,4 @@ jobs:
         ssh-add - <<< $DEPLOY_KEY
         mkdir ~/.ssh
         ssh-keyscan -H www.oriontransfer.net >> ~/.ssh/known_hosts
-        git push -f ssh://http@www.oriontransfer.net/srv/http/www.lucidsystems.co.nz/ HEAD:master
+        git push -f ssh://http@www.oriontransfer.net/srv/http/www.lucidsystems.co.nz/ HEAD:main

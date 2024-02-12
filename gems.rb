@@ -3,26 +3,20 @@
 source 'https://rubygems.org'
 
 group :preload do
-	gem 'utopia', '~> 2.18.4'
+	gem 'utopia', '~> 2.23.0'
 	gem 'utopia-gallery'
 	gem 'utopia-analytics'
 	
 	gem 'variant'
 end
 
-gem 'rake'
-gem 'bake'
-gem 'bundler'
-gem 'rack-test'
-
-group :development do
-	gem 'guard-falcon', require: false
-	gem 'guard-rspec', require: false
-	
-	gem 'rspec'
+group :test do
+	gem 'sus'
+	gem 'sus-fixtures-async-http'
 	gem 'covered'
 	
-	gem 'async-rspec'
+	gem 'rack-test'
+	
 	gem 'benchmark-http'
 end
 

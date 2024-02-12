@@ -1,7 +1,7 @@
 <?r response.do_not_cache! ?>
 <content:page>
 	<?r
-		query = request[:query] || ""
+		query = request.params[:query] || ""
 		search = Xapian::Rack.get(request.env)
 	?>
 	

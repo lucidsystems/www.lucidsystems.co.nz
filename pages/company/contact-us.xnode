@@ -20,7 +20,7 @@
 		<dd><small><a href="http://maps.google.co.nz/?q=28A+Cathedral+Square,+Christchurch+8011,+New+Zealand">Locate on Google Maps</a></small></dd>
 		-->
 		
-		<?r if request[:shipping] ?>
+		<?r if request.params[:shipping] ?>
 		<dt>Shipping Address</dt>
 		<dd>Lucid Information Systems</dd>
 		<dd>28 Cathedral Square</dd>
