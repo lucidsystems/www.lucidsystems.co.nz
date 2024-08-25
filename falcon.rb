@@ -2,11 +2,16 @@
 # frozen_string_literal: true
 
 # Released under the MIT License.
-# Copyright, 2024, by Samuel Williams.
+# Copyright, 2019-2022, by Samuel Williams.
 
 require 'falcon/environment/rack'
 require 'falcon/environment/tls'
 require 'falcon/environment/lets_encrypt_tls'
+require 'falcon/environment/supervisor'
+
+service 'supervisor' do
+	include Falcon::Environment::Supervisor
+end
 
 hostname = File.basename(__dir__)
 
