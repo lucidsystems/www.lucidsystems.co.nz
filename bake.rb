@@ -7,7 +7,7 @@ end
 
 # Restart the application server.
 def restart
-	call 'falcon:supervisor:restart'
+	call 'async:service:supervisor:restart'
 end
 
 # Start the development server.

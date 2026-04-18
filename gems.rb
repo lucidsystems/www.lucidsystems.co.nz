@@ -6,6 +6,7 @@ group :preload do
 	gem 'utopia', '~> 2.24'
 	gem 'utopia-gallery'
 	gem 'utopia-analytics'
+	gem 'async-service-supervisor'
 	
 	gem 'variant'
 end
